@@ -1,0 +1,528 @@
+.dropdown-menu {
+  transform: translateX(1%);
+  transition: all 0.3s ease;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+/* .dropdo{
+    margin-left: 150px;
+} */
+.dropdo{
+    margin-left: 330px;
+}
+.drop{
+    margin-left: 30px;
+}
+
+.unstiched{
+    width: 500px;
+    /* margin-left: 300px; */
+    /* margin-top: 80px; */
+}
+
+
+/* Background overlay for blur effect */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: 998; /* Positioned below the search bar */
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none; /* Ensure the overlay doesn't block clicks */
+}
+
+.background-overlay.open {
+  opacity: 1;
+  pointer-events: auto; /* Allow interactions when the overlay is visible */
+}
+
+/* Search Bar Styles */
+.search-bar {
+  position: fixed;
+  top: -50%; /* Initially hide the search bar above the screen */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 90%; /* Adjust width as needed */
+  max-width: 600px; /* Limit maximum width */
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 999; /* Ensure the search bar is above the overlay */
+  transition: top 0.3s ease; /* Animation for sliding in and out */
+}
+
+.search-bar.open {
+  top: 50%; /* Move to the center of the screen vertically */
+  transform: translate(-50%, -50%); /* Adjust to center both horizontally and vertically */
+}
+
+.search-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar-content input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.search-bar-content button {
+  flex-shrink: 0;
+}
+
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo centered on desktop */
+.navbar-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Menu on the left side */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Icons on the right side */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Move logo before the toggle button on mobile */
+@media (max-width: 991px) {
+  .navbar-container {
+    flex-direction: column;
+    display: contents !important;
+  }
+  .listof>li{
+    text-align: center;
+  }
+
+  .navbar-logo {
+    order: -1; /* Move the logo before the toggle button */
+    position: relative;
+    left: auto;
+    transform: none;
+    margin-bottom: 10px;
+    
+  }
+.logomain{
+  width: 300px;
+}
+  
+
+  .navbar-icons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Background Overlay */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1040;
+}
+
+.background-overlay.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Sliding Search Bar */
+.search-bar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1050;
+}
+
+.search-bar.open {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-bar-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-bar input {
+  border-radius: 4px;
+}
+
+.search-bar button {
+  border-radius: 4px;
+}
+/* ---------carousel----- */
+.carousel{
+    border-radius: 25px;
+    box-shadow: 0px 3px 15px black;
+    ;
+}
+.imagecarou{
+    border-radius: 20px;
+}
+
+.scroll-top-button {
+  transition: opacity 0.3s;
+}
+
+.scroll-top-button:hover {
+  opacity: 0.8;
+}
+
+/* Home page custom styles */
+.homeimg:hover {
+  transform: scale(1.05);
+}
+
+.hover-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.scroll-top-button {
+  transition: background-color 0.3s, transform 0.3s;
+}
+.shopbyimage{
+    border-radius: 25px;
+}
+
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  border-radius: 12px 12px 0 0;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ---------CardNew-------- */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* Aspect ratio 4:3 */
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+/* -------------Mostsellingproduct--------- */
+/* Card.css */
+
+.card-container {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2em;
+  /* margin-bottom: 10px; */
+  color: #333;
+}
+
+.card-description {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.card-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+/* ___________________review_____________ */
+.review-section {
+  background-color: #f8f9fa; /* Light gray background */
+ 
+}
+
+.card {
+  border: none;
+  border-radius: 15px; /* Rounded corners for modern look */
+  transition: transform 0.2s ease; /* Smooth scaling effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.rating-color {
+  color: #f39c12; /* Star color for rating */
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* Hamburger Menu */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px; /* Adjust size as needed */
+  height: 15px; /* Adjust size as needed */
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 3px; /* Line thickness */
+  background-color: #333; /* Line color */
+  transition: all 0.3s ease;
+}
+.canvas{
+  padding-left: 0px !important;
+}
+.canvas>li>a{
+  text-decoration: none;
+  color: #333;
+  list-style: none;
+}
+.offcanvas-start{
+  width: 250px !important;
+}
+/* Ensure submenu is hidden by default */
+.submenu-right {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 95%;
+  margin-left:0px;
+  width:650px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+  height:90%;
+}
+
+/* Show submenu on hover */
+.dropdown-item:hover .submenu-right,
+.submenu-right:hover {
+  display: block;
+}
+
+/* Ensure submenu has a smooth appearance */
+.submenu-right {
+  opacity: 0;
+  /* visibility: hidden; */
+}
+
+.dropdown-item:hover .submenu-right,
+.submenu-right:hover {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown-toggle::after{
+  content: none;
+}
+/* Offcanvas adjustments for mobile screens */
+@media (max-width: 768px) {
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make offcanvas full height */
+  }
+
+  .canvas {
+    flex: 1;
+    overflow-y: auto; /* Allow scrolling if content is too long */
+  }
+
+  .submenu-right {
+    position: static; /* Change to static positioning for mobile */
+    margin: 0;
+    width: 100%;
+    top: auto; /* Reset top positioning */
+    left: auto; /* Reset left positioning */
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .dropdown-item {
+    position: relative;
+    
+  
+  }
+
+  .dropdown-item .submenu-right {
+    display: none;
+  }
+
+  .dropdown-item.active .submenu-right,
+  .submenu-right:hover {
+    display: block;
+  }
+  .offcanvas-start{
+  width: 350px !important;
+}
+.listsett{
+  padding-left: 0px !important;
+}
+.poundsideimage{
+  margin-left: 13px !important;
+  width: 109px !important;
+}
+}
+.dropdown-item{
+    padding: 0 !important;
+   }
+.kitechseclist{
+  list-style: none !important;
+}
+.poundsideimage{
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 1px 5px 4px 2px rgb(97, 91, 91);
+}
+.poundsideimage:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+ 
+}

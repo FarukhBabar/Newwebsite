@@ -1,25 +1,393 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+import Navbar from './Components/Navbar'
+import ProtectedRoutes from './ProtectedRoutes'
+import Poundline from './Components/Main PAges/Poundline'
+import Debathroom from './Components/Main PAges/Debathroom'
+import Loundrysubcat from './Components/Main PAges/Loundrysubcat'
+import Kitechendde from './Components/Main PAges/Kitechendde'
+import Cleaning from './Components/Main PAges/Cleaning'
+import Gardening from './Components/Main PAges/Gardening'
+import Tolitries from './Components/Main PAges/Tolitries'
+import Homedecor from './Components/Main PAges/Homedecor'
+import Diy from './Components/Main PAges/Diy'
+import Houseclaner from './Components/Main PAges/Houseclaner'
+import PlasticHouseware from './Components/Main PAges/PlasticHouseware'
+import Foodmainpage from './Components/Main PAges/FoodandDeink/Foodmainpage'
+import Foodsinglpage from './Components/Main PAges/FoodandDeink/Foodsinglpage'
+import Foodform from './Components/Main PAges/FoodandDeink/Foodform'
+import Listfood from './Components/Main PAges/FoodandDeink/Listfood'
+import Updatefood from './Components/Main PAges/FoodandDeink/Updatefood'
+import LoginForm from './Components/LoginForm'
+import Forgetpassword from './Components/Forgetpassword'
+import VerifyOtp from './Components/VerifyOtp'
+import Admindashboard from './Components/Admindashboard'
+import Drinkpage from './Components/Main PAges/Drink/Drinkmain'
+import Drinkssingle from './Components/Main PAges/Drink/Drinksingle'
+import Drinkform from './Components/Main PAges/Drink/Drinkform'
+import Listdrink from './Components/Main PAges/Drink/Drinklist'
+import Updatedrink from './Components/Main PAges/Drink/Drinkupdate'
+import { CartProvider } from './Components/CartContext';
+import Electricalde from './Components/Main PAges/Electrical/Electricalde'
+import Electricalsinglepage from './Components/Main PAges/Electrical/Electricalsinglepage'
+import Smokingessentials from './Components/Main PAges/SmokingEssentials/Smokingessentials'
+import Smokingsinglepage from './Components/Main PAges/SmokingEssentials/Smokingsinglepage'
+import Lightersinglepage from './Components/Main PAges/Smoking/Lightersinglepage'
+import Lighter from './Components/Main PAges/Smoking/Lighter'
+import Electricalform from './Components/Main PAges/Electrical/Electricalform'
+import Listofelectrical from './Components/Main PAges/Electrical/Listofelectrical'
+import Updateelectrical from './Components/Main PAges/Electrical/Updateelectrical'
+import Smokingessform from './Components/Main PAges/SmokingEssentials/Smokingessform'
+import Smokingesslist from './Components/Main PAges/SmokingEssentials/Smokingesslist'
+import Updatesmokingess from './Components/Main PAges/SmokingEssentials/Updatesmokingess'
+import Lighterform from './Components/Main PAges/Smoking/Lighterform'
+import Listoflighter from './Components/Main PAges/Smoking/Listoflighter'
+import Updatelighter from './Components/Main PAges/Smoking/Updatelighter'
+import Bathroomp from './Components/Main PAges/Poudliene/Bathroom/Bathroomp'
+import Bathroomsingle from './Components/Main PAges/Poudliene/Bathroom/Bathroomsingle'
+import Candeles from './Components/Main PAges/Poudliene/Candeles/Candeles'
+import Candelessingl from './Components/Main PAges/Poudliene/Candeles/Candelessingl'
+import Carpo from './Components/Main PAges/Poudliene/Carproducts/Carpo'
+import Carposingl from './Components/Main PAges/Poudliene/Carproducts/Carposingl'
+import Craftpo from './Components/Main PAges/Poudliene/Craft/Craftpo'
+import Craftsingl from './Components/Main PAges/Poudliene/Craft/Craftsingl'
+import Disposible from './Components/Main PAges/Poudliene/Disposible/Disposible'
+import Disposiblesingl from './Components/Main PAges/Poudliene/Disposible/Disposbilesingle'
+import Diytoolspo from './Components/Main PAges/Poudliene/Diytools/Diytoolspo'
+import Diytoolssingl from './Components/Main PAges/Poudliene/Diytools/Diytoolssingl'
+import Bathroomform from './Components/Main PAges/Poudliene/Bathroom/Bathroomform'
+import Bathroomlist from './Components/Main PAges/Poudliene/Bathroom/Bathroomlist'
+import Updatebathroom from './Components/Main PAges/Poudliene/Bathroom/Updatebathroom'
+import Candelesform from './Components/Main PAges/Poudliene/Candeles/Candelesform'
+import Candeleslist from './Components/Main PAges/Poudliene/Candeles/Candeleslist'
+import Candelesupdate from './Components/Main PAges/Poudliene/Candeles/Candelesupdate'
+import Carpoform from './Components/Main PAges/Poudliene/Carproducts/Carpoform'
+import Carpolist from './Components/Main PAges/Poudliene/Carproducts/Carpolist'
+import Carpoupdate from './Components/Main PAges/Poudliene/Carproducts/Carpoupdate'
+import Craftform from './Components/Main PAges/Poudliene/Craft/Craftform'
+import Craftlist from './Components/Main PAges/Poudliene/Craft/Craftlist'
+import Craftupdate from './Components/Main PAges/Poudliene/Craft/Craftupdate'
+import Disposibleformpo from './Components/Main PAges/Poudliene/Disposible/Disposibleformpo'
+import Disposiblelistpo from './Components/Main PAges/Poudliene/Disposible/Disposiblelistpo'
+import Disposibleupdatepo from './Components/Main PAges/Poudliene/Disposible/Disposibleupdatepo'
+import Diytoolsform from './Components/Main PAges/Poudliene/Diytools/Diytoolsform'
+import Diytoolsupdate from './Components/Main PAges/Poudliene/Diytools/Diytoolsupdate'
+import Diytoolslist from './Components/Main PAges/Poudliene/Diytools/Diytoolslist'
+import Firstaidmain from './Components/Main PAges/Poudliene/Firstaidpharmacy/Firstaidmain'
+import Firstaidsingle from './Components/Main PAges/Poudliene/Firstaidpharmacy/Firstaidsingle'
+import Foodpound from './Components/Main PAges/Poudliene/Foodpoundline/Foodpound'
+import Foodposingl from './Components/Main PAges/Poudliene/Foodpoundline/Foodposingl'
+import Hosierysingl from './Components/Main PAges/Poudliene/Hosiery/Hosierysingl'
+import Hosiery from './Components/Main PAges/Poudliene/Hosiery/Hosiery'
+import Householdcl from './Components/Main PAges/Poudliene/Householdcleaning/Householdcl'
+import Househldpr from './Components/Main PAges/Poudliene/Householdproducts/Househldpr'
+import Househldprsingl from './Components/Main PAges/Poudliene/Householdproducts/Househldprsingl'
+import Householdclsingl from './Components/Main PAges/Poudliene/Householdcleaning/Householdclsingl'
+import Kitchenwarepo from './Components/Main PAges/Poudliene/Kitchwear/Kitchenwarepo'
+import Kitchenwareposingl from './Components/Main PAges/Poudliene/Kitchwear/Kitchenwareposingl'
+import Lightergas from './Components/Main PAges/Poudliene/Lightergas/Lightergas'
+import Lightergassingl from './Components/Main PAges/Poudliene/Lightergas/Lightergassingl'
+import Loundryiron from './Components/Main PAges/Poudliene/Loundryiron/Loundryiron'
+import Loundryirsingl from './Components/Main PAges/Poudliene/Loundryiron/Loundryirsingl'
+import Pestcon from './Components/Main PAges/Poudliene/PestControl/Pestcon'
+import Pestconsingl from './Components/Main PAges/Poudliene/PestControl/Pestconsingl'
+import Reading from './Components/Main PAges/Poudliene/Reading/Reading'
+import Readingsingl from './Components/Main PAges/Poudliene/Reading/Readingsingl'
+import Shoecare from './Components/Main PAges/Poudliene/Shoecare/Shoecare'
+import Shoesingl from './Components/Main PAges/Poudliene/Shoecare/Shoesingl'
+import Stationerypo from './Components/Main PAges/Poudliene/Stationery/Stationerypo'
+import Stationerysingl from './Components/Main PAges/Poudliene/Stationery/Stationerysingl'
+import Potoy from './Components/Main PAges/Poudliene/Toys/Potoy'
+import Potoysingl from './Components/Main PAges/Poudliene/Toys/Potoysingl'
+import Electric from './Components/Main PAges/Poudliene/Electricde/Electric'
+import Electricaldepage from './Components/Main PAges/Electrical/Electricaldepage'
+import Bathmatsmain from './Components/Main PAges/Bathroom/Bathmats/Bathmatsmain'
+import Bathmatssinglr from './Components/Main PAges/Bathroom/Bathmats/Bathmatssinglr'
+import Bathacessories from './Components/Main PAges/Bathroom/Bathroomacessories/Bathacessories'
+import Bathacessoriessingle from './Components/Main PAges/Bathroom/Bathroomacessories/Bathacessoriessingle'
+import Bathroommain from './Components/Main PAges/Bathroom/Bathroomscale.js/Bathroommain'
+import Bathroomsinglede from './Components/Main PAges/Bathroom/Bathroomscale.js/Bathroomsinglede'
+import Mirrormain from './Components/Main PAges/Bathroom/Mirror/Mirrormain'
+import Mirrorsinglepage from './Components/Main PAges/Bathroom/Mirror/Mirrorsinglepage'
+import Showermain from './Components/Main PAges/Bathroom/Shower/Showermain'
+import Showersingle from './Components/Main PAges/Bathroom/Shower/Showersingle'
+import Showhead from './Components/Main PAges/Bathroom/Showershead/Showhead'
+import Showheadsingle from './Components/Main PAges/Bathroom/Showershead/Showheadsingle'
+import Airerspage from './Components/Main PAges/Laundry/Airers/Airerspage'
+import Airerssingle from './Components/Main PAges/Laundry/Airers/Airerssingle'
+import Bags from './Components/Main PAges/Laundry/Bags/Bags'
+import Bagssingle from './Components/Main PAges/Laundry/Bags/Bagssingl'
+import Basketst from './Components/Main PAges/Laundry/Basketstorgae/Basketst'
+import Basketstsingle from './Components/Main PAges/Laundry/Basketstorgae/Basketstsingl'
+import Ironingpage from './Components/Main PAges/Laundry/Ironing Board/Ironingpage'
+import Ioriningsingle from './Components/Main PAges/Laundry/Ironing Board/Ioriningsingle'
+import Laacess from './Components/Main PAges/Laundry/Laundryacessories/Laacess'
+import Laacesssingle from './Components/Main PAges/Laundry/Laundryacessories/Laacesssingle'
+import Luggage from './Components/Main PAges/Laundry/Luggage/Luggage'
+import Luggagesingl from './Components/Main PAges/Laundry/Luggage/Luggagesingl'
+import Bakeware from './Components/Main PAges/Kitechenwear/Bakeware/Bakeware'
+import Bakewaresingle from './Components/Main PAges/Kitechenwear/Bakeware/Bakewaresingle'
+import Barewear from './Components/Main PAges/Kitechenwear/Barewear/Barewear'
+import Barewearsingl from './Components/Main PAges/Kitechenwear/Barewear/Barewearsingl'
+import Breadsingl from './Components/Main PAges/Kitechenwear/Breadbeans/Breadsingl'
+import Bread from './Components/Main PAges/Kitechenwear/Breadbeans/Bread'
+import Catering from './Components/Main PAges/Kitechenwear/Catering/Catering'
+import Cateringsingl from './Components/Main PAges/Kitechenwear/Catering/Cateringsingl'
+import Chrome from './Components/Main PAges/Kitechenwear/Chrome/Chrome'
+import Chromesingl from './Components/Main PAges/Kitechenwear/Chrome/Chromesingl'
+import Cookwar from './Components/Main PAges/Kitechenwear/Cookware/Cookwar'
+import Cookwarsingl from './Components/Main PAges/Kitechenwear/Cookware/Cookwaresingl'
+import Cutlery from './Components/Main PAges/Kitechenwear/Cutlery/Cutlery'
+import Cutlerysingl from './Components/Main PAges/Kitechenwear/Cutlery/Cutlerysingl'
+import Kettles from './Components/Main PAges/Kitechenwear/Kettles/Kettles'
+import Kettlessingl from './Components/Main PAges/Kitechenwear/Kettles/Kettlessingl'
+import KitchenACC from './Components/Main PAges/Kitechenwear/KitchenACC/KitchenACC'
+import KitchenACCsingl from './Components/Main PAges/Kitechenwear/KitchenACC/KitchenACCsingl'
+import Kitechenbin from './Components/Main PAges/Kitechenwear/Kitechenbin/Kitechenbin'
+import Kitechenbinsingl from './Components/Main PAges/Kitechenwear/Kitechenbin/Kitechenbinsingl'
+import Kitechenga from './Components/Main PAges/Kitechenwear/Kitechengadgets/Kitechenga'
+import Kitechengasingl from './Components/Main PAges/Kitechenwear/Kitechengadgets/Kitechengasingl'
+import KitechenKni from './Components/Main PAges/Kitechenwear/kitechenKnife/KitechenKni'
+import KitechenKnisingl from './Components/Main PAges/Kitechenwear/kitechenKnife/KitechenKnisingl'
+import Scaleski from './Components/Main PAges/Kitechenwear/KitechenScales/Scaleski'
+import Scaleskisingl from './Components/Main PAges/Kitechenwear/KitechenScales/Scaleskisingl'
+import Plasticki from './Components/Main PAges/Kitechenwear/Plastickitechenware/Plasticki'
+import Plastickisingl from './Components/Main PAges/Kitechenwear/Plastickitechenware/Plastickisingl'
+import Simplehu from './Components/Main PAges/Kitechenwear/Simple Human/Simplehu'
+import Simplehusingl from './Components/Main PAges/Kitechenwear/Simple Human/Simplehusingl'
+import Tea from './Components/Main PAges/Kitechenwear/Tea/Tea'
+import Teasingl from './Components/Main PAges/Kitechenwear/Tea/Teasingl'
+import Trays from './Components/Main PAges/Kitechenwear/Trays/Trays'
+import Trayssingl from './Components/Main PAges/Kitechenwear/Trays/Trayssingl'
+import Water from './Components/Main PAges/Kitechenwear/Waterfilter/Water'
+import Watersingl from './Components/Main PAges/Kitechenwear/Waterfilter/Watersingl'
+import Wooden from './Components/Main PAges/Kitechenwear/Wooden/Wooden'
+import Woodensingl from './Components/Main PAges/Kitechenwear/Wooden/Woodensingl'
+import Brushware from './Components/Main PAges/Cleaning matterial/Brushare/Brushware'
+import Brushwaresingel from './Components/Main PAges/Cleaning matterial/Brushare/Brushwaresingl'
+import Duster from './Components/Main PAges/Cleaning matterial/Clothandduster/Duster'
+import Dustersingl from './Components/Main PAges/Cleaning matterial/Clothandduster/Dustersingl'
+import Gloves from './Components/Main PAges/Cleaning matterial/Gloves/Gloves'
+import Glovessingl from './Components/Main PAges/Cleaning matterial/Gloves/Glovessingl'
+import Mops from './Components/Main PAges/Cleaning matterial/Mops/Mops'
+import Mopssingl from './Components/Main PAges/Cleaning matterial/Mops/Mopssingl'
+import Sponge from './Components/Main PAges/Cleaning matterial/Sponge/Sponge'
+import Spongesingl from './Components/Main PAges/Cleaning matterial/Sponge/Spongesingl'
+const AdminLayout = ({ children }) => (
+  
+  <>
+  {/* <Adminnavbar/> */}
+  <div>{children}</div>
+  </>
+);
+const MainLayout = ({ children }) => (
+  <>
+    <Navbar />
+    <div>{children}</div>
+  </>
+);
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+  
+      <CartProvider>
+      <Routes>
+           <Route element={<ProtectedRoutes/>}>
+        <Route path='/adminpanal' element={<AdminLayout><Admindashboard/></AdminLayout>} />
+          <Route path='/foodform' element={<AdminLayout><Foodform /></AdminLayout>} />
+        <Route path='/listfood' element={<AdminLayout><Listfood/></AdminLayout>} />
+        <Route path='/listfood/:id' element={<AdminLayout><Updatefood /></AdminLayout>} />
+        <Route path='/drinkform' element={<AdminLayout><Drinkform /></AdminLayout>} />
+        <Route path='/listdrink' element={<AdminLayout><Listdrink/></AdminLayout>} />
+        <Route path='/listdrink/:id' element={<AdminLayout><Updatedrink /></AdminLayout>} />
+
+        <Route path='/electricalform' element={<AdminLayout><Electricalform /></AdminLayout>} />
+        <Route path='/listelectrical' element={<AdminLayout><Listofelectrical/></AdminLayout>} />
+        <Route path='/listelectrical/:id' element={<AdminLayout><Updateelectrical /></AdminLayout>} />
+
+        <Route path='/smokingform' element={<AdminLayout><Smokingessform /></AdminLayout>} />
+        <Route path='/listsmoking' element={<AdminLayout><Smokingesslist/></AdminLayout>} />
+        <Route path='/listsmoking/:id' element={<AdminLayout><Updatesmokingess /></AdminLayout>} />
+
+        <Route path='/lighterform' element={<AdminLayout><Lighterform /></AdminLayout>} />
+        <Route path='/listlighter' element={<AdminLayout><Listoflighter/></AdminLayout>} />
+        <Route path='/listlighter/:id' element={<AdminLayout><Updatelighter /></AdminLayout>} />
+
+       <Route path='/bathroomform' element={<AdminLayout><Bathroomform /></AdminLayout>} />
+        <Route path='/listbathroom' element={<AdminLayout><Bathroomlist/></AdminLayout>} />
+        <Route path='/listbathroom/:id' element={<AdminLayout><Updatebathroom /></AdminLayout>} />
+         <Route path='/candelform' element={<AdminLayout><Candelesform /></AdminLayout>} />
+        <Route path='/listcandel' element={<AdminLayout><Candeleslist/></AdminLayout>} />
+        <Route path='/listcandel/:id' element={<AdminLayout><Candelesupdate /></AdminLayout>} />
+          <Route path='/carproductform' element={<AdminLayout><Carpoform /></AdminLayout>} />
+        <Route path='/listcarproduct' element={<AdminLayout><Carpolist/></AdminLayout>} />
+        <Route path='/listcarproduct/:id' element={<AdminLayout><Carpoupdate/></AdminLayout>} />  <Route path='/craftform' element={<AdminLayout><Craftform /></AdminLayout>} />
+        <Route path='/listcraft' element={<AdminLayout><Craftlist/></AdminLayout>} />
+        <Route path='/listcraft/:id' element={<AdminLayout><Craftupdate /></AdminLayout>} />  
+        <Route path='/disposibleform' element={<AdminLayout><Disposibleformpo /></AdminLayout>} />
+        <Route path='/listdisposible' element={<AdminLayout><Disposiblelistpo/></AdminLayout>} />
+        <Route path='/listdisposible/:id' element={<AdminLayout><Disposibleupdatepo /></AdminLayout>} />
+        <Route path='/diytoolform' element={<AdminLayout><Diytoolsform /></AdminLayout>} />
+        <Route path='/listdiytool' element={<AdminLayout><Diytoolslist/></AdminLayout>} />
+        <Route path='/listdiytool/:id' element={<AdminLayout><Diytoolsupdate /></AdminLayout>} />
+        </Route>
+        {/* ---Main Routes----- */}
+        <Route path='/forget' element={<Forgetpassword/>}  />
+        <Route path='/verifyotp' element={<VerifyOtp/>}/>
+          <Route path='/' element={<MainLayout><Home/></MainLayout>}/>
+          <Route path='/login' element={<MainLayout><LoginForm/></MainLayout>}/>
+           <Route path='/category/poundline' element={<MainLayout><Poundline/></MainLayout>}/>
+           <Route path='/category/bathroom' element={<MainLayout><Debathroom/></MainLayout>}/>
+            <Route path='/category/loundry' element={<MainLayout><Loundrysubcat/></MainLayout>}/>
+            <Route path='/kitechenware' element={<MainLayout><Kitechendde/></MainLayout>}/>
+            <Route path='/cleaning' element={<MainLayout><Cleaning/></MainLayout>}/>
+            <Route path='/gardening' element={<MainLayout><Gardening/></MainLayout>}/>
+            <Route path='/tolitries' element={<MainLayout><Tolitries/></MainLayout>}/>
+            <Route path='/homedecor' element={<MainLayout><Homedecor/></MainLayout>}/>
+            <Route path='/diy' element={<MainLayout><Diy/></MainLayout>}/> 
+            <Route path='/houseclaner' element={<MainLayout><Houseclaner/></MainLayout>}/>
+            <Route path='/plastichouseware' element={<MainLayout><PlasticHouseware/></MainLayout>}/>
+             <Route path='/food' element={<MainLayout><Foodmainpage/></MainLayout>}/>
+              <Route path='/product/food/:id' element={<MainLayout><Foodsinglpage/></MainLayout>}/>
+             <Route path='/drink' element={<MainLayout><Drinkpage/></MainLayout>}/>
+              <Route path='/product/drink/:id' element={<MainLayout><Drinkssingle/></MainLayout>}/>
+
+              <Route path='/electrical' element={<MainLayout><Electricalde/></MainLayout>}/>
+              <Route path='/product/electrical/:id' element={<MainLayout><Electricalsinglepage/></MainLayout>}/>
+              <Route path='/smoking' element={<MainLayout><Smokingessentials/></MainLayout>}/>
+              <Route path='/product/smoking/:id' element={<MainLayout><Smokingsinglepage/></MainLayout>}/>
+
+              <Route path='/lighter' element={<MainLayout><Lighter/></MainLayout>}/>
+              <Route path='/product/lighter/:id' element={<MainLayout><Lightersinglepage/></MainLayout>}/>
+
+               <Route path='/category/poundline/bathroom' element={<MainLayout><Bathroomp/></MainLayout>}/>
+              <Route path='/product/bathroom/:id' element={<MainLayout><Bathroomsingle/></MainLayout>}/>
+                <Route path='/category/poundline/candels' element={<MainLayout><Candeles/></MainLayout>}/>
+              <Route path='/product/candels/:id' element={<MainLayout><Candelessingl/></MainLayout>}/>
+              <Route path='/category/poundline/carproduct' element={<MainLayout><Carpo/></MainLayout>}/>
+              <Route path='/product/carproduct/:id' element={<MainLayout><Carposingl/></MainLayout>}/>
+               <Route path='/category/poundline/craft' element={<MainLayout><Craftpo/></MainLayout>}/>
+              <Route path='/product/craft/:id' element={<MainLayout><Craftsingl/></MainLayout>}/>
+                <Route path='/category/poundline/disposible' element={<MainLayout><Disposible/></MainLayout>}/>
+              <Route path='/product/disposible/:id' element={<MainLayout><Disposiblesingl/></MainLayout>}/>
+              <Route path='/category/poundline/diytools' element={<MainLayout><Diytoolspo/></MainLayout>}/>
+              <Route path='/product/diytools/:id' element={<MainLayout><Diytoolssingl/></MainLayout>}/>
+              <Route path='/category/poundline/firstaid' element={<MainLayout><Firstaidmain/></MainLayout>}/>
+              <Route path='/product/firstaid/:id' element={<MainLayout><Firstaidsingle/></MainLayout>}/>
+              <Route path='/category/poundline/foundpound' element={<MainLayout><Foodpound/></MainLayout>}/>
+              <Route path='/product/foundpound/:id' element={<MainLayout><Foodposingl/></MainLayout>}/>
+               <Route path='/category/poundline/hosiery' element={<MainLayout><Hosiery/></MainLayout>}/>
+              <Route path='/product/hosiery/:id' element={<MainLayout><Hosierysingl/></MainLayout>}/>
+                <Route path='/category/poundline/householdcleaning' element={<MainLayout><Householdcl/></MainLayout>}/>
+              <Route path='/product/householdcleaning/:id' element={<MainLayout><Householdclsingl/></MainLayout>}/>
+                <Route path='/category/poundline/householdproduct' element={<MainLayout><Househldpr/></MainLayout>}/>
+              <Route path='/product/householdproduct/:id' element={<MainLayout><Househldprsingl/></MainLayout>}/>
+               <Route path='/category/poundline/kitchenwarepou' element={<MainLayout><Kitchenwarepo/></MainLayout>}/>
+              <Route path='/product/kitchenwarepou/:id' element={<MainLayout><Kitchenwareposingl/></MainLayout>}/>
+
+                 <Route path='/category/poundline/lightergas' element={<MainLayout><Lightergas/></MainLayout>}/>
+              <Route path='/product/lightergas/:id' element={<MainLayout><Lightergassingl/></MainLayout>}/>
+
+                 <Route path='/category/poundline/loundryiron' element={<MainLayout><Loundryiron/></MainLayout>}/>
+              <Route path='/product/loundryiron/:id' element={<MainLayout><Loundryirsingl/></MainLayout>}/>
+
+               <Route path='/category/poundline/pestcon' element={<MainLayout><Pestcon/></MainLayout>}/>
+              <Route path='/product/pestcon/:id' element={<MainLayout><Pestconsingl/></MainLayout>}/>
+
+               <Route path='/category/poundline/readingglasses' element={<MainLayout><Reading/></MainLayout>}/>
+              <Route path='/product/readingglasses/:id' element={<MainLayout><Readingsingl/></MainLayout>}/>
+              
+               <Route path='/category/poundline/shoecare' element={<MainLayout><Shoecare/></MainLayout>}/>
+              <Route path='/product/shoecare/:id' element={<MainLayout><Shoesingl/></MainLayout>}/>
+              
+               <Route path='/category/poundline/stationerypo' element={<MainLayout><Stationerypo/></MainLayout>}/>
+              <Route path='/product/stationerypo/:id' element={<MainLayout><Stationerysingl/></MainLayout>}/>
+              
+               <Route path='/category/poundline/poundtoy' element={<MainLayout><Potoy/></MainLayout>}/>
+              <Route path='/product/poundtoy/:id' element={<MainLayout><Potoysingl/></MainLayout>}/>
+              
+              <Route path='/category/poundline/electric' element={<MainLayout><Electric/></MainLayout>}/>
+              <Route path='/product/electric/:id' element={<MainLayout><Electricaldepage/></MainLayout>}/>
+              <Route path='/category/bathroom/bathmats' element={<MainLayout><Bathmatsmain/></MainLayout>}/>
+              <Route path='/product/bathmats/:id' element={<MainLayout><Bathmatssinglr/></MainLayout>}/>
+              <Route path='/category/bathroom/bathroomaccessories' element={<MainLayout><Bathacessories/></MainLayout>}/>
+              <Route path='/product/bathroomaccessories/:id' element={<MainLayout><Bathacessoriessingle/></MainLayout>}/>
+              <Route path='/category/bathroom/bathroomscale' element={<MainLayout><Bathroommain/></MainLayout>}/>
+              <Route path='/product/bathroomscale/:id' element={<MainLayout><Bathroomsinglede/></MainLayout>}/>
+              <Route path='/category/bathroom/bathroommirror' element={<MainLayout><Mirrormain/></MainLayout>}/>
+              <Route path='/product/bathroommirror/:id' element={<MainLayout><Mirrorsinglepage/></MainLayout>}/>
+              <Route path='/category/bathroom/shower' element={<MainLayout><Showermain/></MainLayout>}/>
+              <Route path='/product/shower/:id' element={<MainLayout><Showersingle/></MainLayout>}/>
+              <Route path='/category/bathroom/showerhead' element={<MainLayout><Showhead/></MainLayout>}/>
+              <Route path='/product/showerhead/:id' element={<MainLayout><Showheadsingle/></MainLayout>}/>
+
+               <Route path='/category/laundry/airers' element={<MainLayout><Airerspage/></MainLayout>}/>
+              <Route path='/product/airers/:id' element={<MainLayout><Airerssingle/></MainLayout>}/>
+               <Route path='/category/laundry/bags' element={<MainLayout><Bags/></MainLayout>}/>
+              <Route path='/product/bags/:id' element={<MainLayout><Bagssingle/></MainLayout>}/>
+               <Route path='/category/laundry/baskets' element={<MainLayout><Basketst/></MainLayout>}/>
+              <Route path='/product/baskets/:id' element={<MainLayout><Basketstsingle/></MainLayout>}/>
+               <Route path='/category/laundry/ironingboards' element={<MainLayout><Ironingpage/></MainLayout>}/>
+              <Route path='/product/ironingboards/:id' element={<MainLayout><Ioriningsingle/></MainLayout>}/>
+               <Route path='/category/laundry/laundryaccessories' element={<MainLayout><Laacess/></MainLayout>}/>
+              <Route path='/product/laundryaccessories/:id' element={<MainLayout><Laacesssingle/></MainLayout>}/>
+               <Route path='/category/laundry/luggageaccessories' element={<MainLayout><Luggage/></MainLayout>}/>
+              <Route path='/product/luggageaccessories/:id' element={<MainLayout><Luggagesingl/></MainLayout>}/>
+
+               <Route path='/category/kitechenwear/bakeware' element={<MainLayout><Bakeware/></MainLayout>}/>
+              <Route path='/product/bakeware/:id' element={<MainLayout><Bakewaresingle/></MainLayout>}/>
+               <Route path='/category/kitechenwear/bareware' element={<MainLayout><Barewear/></MainLayout>}/>
+              <Route path='/product/bareware/:id' element={<MainLayout><Barewearsingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/breadbeans' element={<MainLayout><Bread/></MainLayout>}/>
+              <Route path='/product/breadbeans/:id' element={<MainLayout><Breadsingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/catering' element={<MainLayout><Catering/></MainLayout>}/>
+              <Route path='/product/catering/:id' element={<MainLayout><Cateringsingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/chrome' element={<MainLayout><Chrome/></MainLayout>}/>
+              <Route path='/product/chrome/:id' element={<MainLayout><Chromesingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/cookware' element={<MainLayout><Cookwar/></MainLayout>}/>
+              <Route path='/product/cookware/:id' element={<MainLayout><Cookwarsingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/cutlery' element={<MainLayout><Cutlery/></MainLayout>}/>
+              <Route path='/product/cutlery/:id' element={<MainLayout><Cutlerysingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/kettles' element={<MainLayout><Kettles/></MainLayout>}/>
+              <Route path='/product/kettles/:id' element={<MainLayout><Kettlessingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/kitechenacc' element={<MainLayout><KitchenACC/></MainLayout>}/>
+              <Route path='/product/kitechenacc/:id' element={<MainLayout><KitchenACCsingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/kitechenbi' element={<MainLayout><Kitechenbin/></MainLayout>}/>
+              <Route path='/product/kitechenbin/:id' element={<MainLayout><Kitechenbinsingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/kitechengadgets' element={<MainLayout><Kitechenga/></MainLayout>}/>
+              <Route path='/product/kitechengadgets/:id' element={<MainLayout><Kitechengasingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/kitechenknives' element={<MainLayout><KitechenKni/></MainLayout>}/>
+              <Route path='/product/kitechenknives/:id' element={<MainLayout><KitechenKnisingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/scales' element={<MainLayout><Scaleski/></MainLayout>}/>
+              <Route path='/product/scales/:id' element={<MainLayout><Scaleskisingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/plasticboxes' element={<MainLayout><Plasticki/></MainLayout>}/>
+              <Route path='/product/plasticboxes/:id' element={<MainLayout><Plastickisingl/></MainLayout>}/>
+               {/* <Route path='/category/kitechenwear/s' element={<MainLayout><Simplehu/></MainLayout>}/>
+              <Route path='/product/luggageaccessories/:id' element={<MainLayout><Simplehusingl/></MainLayout>}/> */}
+               <Route path='/category/kitechenwear/tea' element={<MainLayout><Tea/></MainLayout>}/>
+              <Route path='/product/tea/:id' element={<MainLayout><Teasingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/tray' element={<MainLayout><Trays/></MainLayout>}/>
+              <Route path='/product/tray/:id' element={<MainLayout><Trayssingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/water' element={<MainLayout><Water/></MainLayout>}/>
+              <Route path='/product/water/:id' element={<MainLayout><Watersingl/></MainLayout>}/>
+               <Route path='/category/kitechenwear/wooden' element={<MainLayout><Wooden/></MainLayout>}/>
+              <Route path='/product/wooden/:id' element={<MainLayout><Woodensingl/></MainLayout>}/>
+
+               <Route path='/category/cleaning/brushware' element={<MainLayout><Brushware/></MainLayout>}/>
+              <Route path='/product/brushware/:id' element={<MainLayout><Brushwaresingel/></MainLayout>}/>
+               <Route path='/category/cleaning/duster' element={<MainLayout><Duster/></MainLayout>}/>
+              <Route path='/product/duster/:id' element={<MainLayout><Dustersingl/></MainLayout>}/>
+               <Route path='/category/cleaning/gloves' element={<MainLayout><Gloves/></MainLayout>}/>
+              <Route path='/product/gloves/:id' element={<MainLayout><Glovessingl/></MainLayout>}/>
+               <Route path='/category/cleaning/mops' element={<MainLayout><Mops/></MainLayout>}/>
+              <Route path='/product/mops/:id' element={<MainLayout><Mopssingl/></MainLayout>}/>
+               <Route path='/category/cleaning/sponge' element={<MainLayout><Sponge/></MainLayout>}/>
+              <Route path='/product/sponge/:id' element={<MainLayout><Spongesingl/></MainLayout>}/>
+      </Routes>
+      </CartProvider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
