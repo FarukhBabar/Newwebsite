@@ -283,15 +283,21 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
           <ol className="collapse submenu-right canvas" id="luxurySubmenu">
             <div><h4 className='text-center text-danger mt-3'>Gardening Catagories</h4>
             <hr/></div>
-            <div>
-            <li><u><a href="#" className="dropdown-item mt-2 ps-5">BBQ</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Camping</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Fertilisrs & Chemicals</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Furniture</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Giftware & Ornaments</a></u></li>
-           <li><u><Link to="/gardening" className="dropdown-item  ps-5">View All</Link></u></li>
+             <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><Link to="/category/gardening/bbq" className="dropdown-item mt-2 ps-5 fs-5 fw-2">BBQ</Link></li>
+            <li><Link to="/category/gardening/camping" className="dropdown-item  ps-5">Camping</Link></li>
+            <li><Link to="/category/gardening/fertilizer" className="dropdown-item  ps-5">Fertilisrs & Chemicals</Link></li>
+            <li><Link to="/category/gardening/furnitur" className="dropdown-item  ps-5">Furniture</Link></li>
+            <li><Link to="/category/gardening/giftware" className="dropdown-item  ps-5">Giftware & Ornaments</Link></li>
             
+            <li><Link to="/gardening" className="dropdown-item  ps-5">View All</Link></li>
             </div>
+            <div>
+            <img src='/Images/sidebanner/gardening.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimage' />
+            </div>
+            </div>
+            
           </ol>
         </li>
           <li className="dropdown-item h5">

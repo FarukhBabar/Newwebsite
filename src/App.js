@@ -174,6 +174,66 @@ import Mops from './Components/Main PAges/Cleaning matterial/Mops/Mops'
 import Mopssingl from './Components/Main PAges/Cleaning matterial/Mops/Mopssingl'
 import Sponge from './Components/Main PAges/Cleaning matterial/Sponge/Sponge'
 import Spongesingl from './Components/Main PAges/Cleaning matterial/Sponge/Spongesingl'
+import Bbq from './Components/Main PAges/Gardening/BBq/Bbq'
+import Bbqsingle from './Components/Main PAges/Gardening/BBq/Bbqsingl'
+import Bird from './Components/Main PAges/Gardening/Birdcare/Bird'
+import Birdsingle from './Components/Main PAges/Gardening/Birdcare/Birdsingle'
+import Camping from './Components/Main PAges/Gardening/Camping/Camping'
+import Campingsingle from './Components/Main PAges/Gardening/Camping/Campingsingl'
+import Fertilizer from './Components/Main PAges/Gardening/Fertilizer/Fertilizer'
+import Fertilizersingle from './Components/Main PAges/Gardening/Fertilizer/Fertilizersingl'
+import Furnitur from './Components/Main PAges/Gardening/Furniture/Furnitur'
+import Furnitursingle from './Components/Main PAges/Gardening/Furniture/Furnituresingl'
+import Giftware from './Components/Main PAges/Gardening/Giftware/Giftware'
+import Giftwaresingle from './Components/Main PAges/Gardening/Giftware/Giftwaresingl'
+import Growing from './Components/Main PAges/Gardening/Growing Media/Growing'
+import Growingsingle from './Components/Main PAges/Gardening/Growing Media/Growingsingl'
+import Lightening from './Components/Main PAges/Gardening/Lightening/Lightening'
+import Lighteningsingle from './Components/Main PAges/Gardening/Lightening/Lighteningsingl'
+import Planters from './Components/Main PAges/Gardening/Planters/Planters'
+import Planterssingle from './Components/Main PAges/Gardening/Planters/Planterssingl'
+import Toolsacce from './Components/Main PAges/Gardening/Tools&Accessories/Toolsacce'
+import Toolsaccesingle from './Components/Main PAges/Gardening/Tools&Accessories/Toolsaccesingl'
+import Watering from './Components/Main PAges/Gardening/Watering/Watering'
+import Wateringsingle from './Components/Main PAges/Gardening/Watering/Wateringsingl'
+import Winterfules from './Components/Main PAges/Gardening/Winterfules/Winterfules'
+import Winterfulessingle from './Components/Main PAges/Gardening/Winterfules/Winterfulessingl'
+import Babycare from './Components/Main PAges/Tolitires/Babycare/Babycare'
+import Babaysingle from './Components/Main PAges/Tolitires/Babycare/Babaysingle'
+import Cotton from './Components/Main PAges/Tolitires/Cottonwhool/Cotton'
+import Cottonsingle from './Components/Main PAges/Tolitires/Cottonwhool/Cottonsingle'
+import Deodrant from './Components/Main PAges/Tolitires/Deodrant/Deodrant'
+import Deodrantsingle from './Components/Main PAges/Tolitires/Deodrant/Deodrantsingl'
+import Giftsets from './Components/Main PAges/Tolitires/Gift sets/Giftsets'
+import Giftsetssingle from './Components/Main PAges/Tolitires/Gift sets/Giftsetssingl'
+import Hair from './Components/Main PAges/Tolitires/Hair Product/Hair'
+import Hairsingle from './Components/Main PAges/Tolitires/Hair Product/Hairsingl'
+import Hand from './Components/Main PAges/Tolitires/Handwash/Hand'
+import Handsingle from './Components/Main PAges/Tolitires/Handwash/Handsingl'
+import Healthcare from './Components/Main PAges/Tolitires/Healthcare/Healthcare'
+import Healthcaresingle from './Components/Main PAges/Tolitires/Healthcare/Healthcaresingl'
+import Mouthwash from './Components/Main PAges/Tolitires/Mouthwash/Mouthwash'
+import Mouthwashsingle from './Components/Main PAges/Tolitires/Mouthwash/Mouthwashsingl'
+import Perfumes from './Components/Main PAges/Tolitires/Perfumes/Perfumes'
+import Perfumessingle from './Components/Main PAges/Tolitires/Perfumes/Perfumessingl'
+import Sanitary from './Components/Main PAges/Tolitires/Sanitary/Sanitary'
+import Sanitarysingle from './Components/Main PAges/Tolitires/Sanitary/Sanitarysingl'
+import Saving from './Components/Main PAges/Tolitires/Saving/Saving'
+import Savingsingle from './Components/Main PAges/Tolitires/Saving/Savingsingl'
+import Shampo from './Components/Main PAges/Tolitires/Shampo/Shampo'
+import Shamposingle from './Components/Main PAges/Tolitires/Shampo/Shamposingl'
+import Showergelsingle from './Components/Main PAges/Tolitires/Showergel/Showergelsingl'
+import Showergel from './Components/Main PAges/Tolitires/Showergel/Showergel'
+import Skincare from './Components/Main PAges/Tolitires/Skincare/Skincare'
+import Skincaresingle from './Components/Main PAges/Tolitires/Skincare/Skincaresingl'
+import Soapbar from './Components/Main PAges/Tolitires/Soapbar/Soapbar'
+import Soapbarsingle from './Components/Main PAges/Tolitires/Soapbar/Soapbarsingl'
+import Toothbrush from './Components/Main PAges/Tolitires/Toothbrush.js/Toothbrush'
+import Toothbrushsingle from './Components/Main PAges/Tolitires/Toothbrush.js/Toothbrushsingl'
+import Toothpast from './Components/Main PAges/Tolitires/Toothpast/Toothpast'
+import Toothpastsingle from './Components/Main PAges/Tolitires/Toothpast/Toothpastsingl'
+import Africa from './Components/Main PAges/Tolitires/west Africa/Africa'
+import Africasingle from './Components/Main PAges/Tolitires/west Africa/Africasingl'
 const AdminLayout = ({ children }) => (
   
   <>
@@ -384,6 +444,68 @@ const App = () => {
               <Route path='/product/mops/:id' element={<MainLayout><Mopssingl/></MainLayout>}/>
                <Route path='/category/cleaning/sponge' element={<MainLayout><Sponge/></MainLayout>}/>
               <Route path='/product/sponge/:id' element={<MainLayout><Spongesingl/></MainLayout>}/>
+
+              <Route path='/category/gardening/bbq' element={<MainLayout><Bbq/></MainLayout>}/>
+              <Route path='/product/bbq/:id' element={<MainLayout><Bbqsingle/></MainLayout>}/>
+              <Route path='/category/gardening/bird' element={<MainLayout><Bird/></MainLayout>}/>
+              <Route path='/product/bird/:id' element={<MainLayout><Birdsingle/></MainLayout>}/>
+              <Route path='/category/gardening/camping' element={<MainLayout><Camping/></MainLayout>}/>
+              <Route path='/product/camping/:id' element={<MainLayout><Campingsingle/></MainLayout>}/>
+              <Route path='/category/gardening/fertilizer' element={<MainLayout><Fertilizer/></MainLayout>}/>
+              <Route path='/product/fertilizer/:id' element={<MainLayout><Fertilizersingle/></MainLayout>}/>
+              <Route path='/category/gardening/furnitur' element={<MainLayout><Furnitur/></MainLayout>}/>
+              <Route path='/product/furnitur/:id' element={<MainLayout><Furnitursingle/></MainLayout>}/>
+              <Route path='/category/gardening/giftware' element={<MainLayout><Giftware/></MainLayout>}/>
+              <Route path='/product/giftware/:id' element={<MainLayout><Giftwaresingle/></MainLayout>}/>
+              <Route path='/category/gardening/growing' element={<MainLayout><Growing/></MainLayout>}/>
+              <Route path='/product/growing/:id' element={<MainLayout><Growingsingle/></MainLayout>}/>
+              <Route path='/category/gardening/lightening' element={<MainLayout><Lightening/></MainLayout>}/>
+              <Route path='/product/lightening/:id' element={<MainLayout><Lighteningsingle/></MainLayout>}/>
+              <Route path='/category/gardening/planters' element={<MainLayout><Planters/></MainLayout>}/>
+              <Route path='/product/planters/:id' element={<MainLayout><Planterssingle/></MainLayout>}/>
+              <Route path='/category/gardening/tools' element={<MainLayout><Toolsacce/></MainLayout>}/>
+              <Route path='/product/tools/:id' element={<MainLayout><Toolsaccesingle/></MainLayout>}/>
+              <Route path='/category/gardening/watering' element={<MainLayout><Watering/></MainLayout>}/>
+              <Route path='/product/watering/:id' element={<MainLayout><Wateringsingle/></MainLayout>}/>
+              <Route path='/category/gardening/winterfules' element={<MainLayout><Winterfules/></MainLayout>}/>
+              <Route path='/product/winterfules/:id' element={<MainLayout><Winterfulessingle/></MainLayout>}/>
+
+               <Route path='/category/toiletries/babycare' element={<MainLayout><Babycare/></MainLayout>}/>
+              <Route path='/product/babycare/:id' element={<MainLayout><Babaysingle/></MainLayout>}/>
+               <Route path='/category/toiletries/cotton' element={<MainLayout><Cotton/></MainLayout>}/>
+              <Route path='/product/cotton/:id' element={<MainLayout><Cottonsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/deodrant' element={<MainLayout><Deodrant/></MainLayout>}/>
+              <Route path='/product/deodrant/:id' element={<MainLayout><Deodrantsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/giftsets' element={<MainLayout><Giftsets/></MainLayout>}/>
+              <Route path='/product/giftsets/:id' element={<MainLayout><Giftsetssingle/></MainLayout>}/>
+               <Route path='/category/toiletries/hair' element={<MainLayout><Hair/></MainLayout>}/>
+              <Route path='/product/hair/:id' element={<MainLayout><Hairsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/hand' element={<MainLayout><Hand/></MainLayout>}/>
+              <Route path='/product/hand/:id' element={<MainLayout><Handsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/healthcare' element={<MainLayout><Healthcare/></MainLayout>}/>
+              <Route path='/product/healthcare/:id' element={<MainLayout><Healthcaresingle/></MainLayout>}/>
+               <Route path='/category/toiletries/mouthwash' element={<MainLayout><Mouthwash/></MainLayout>}/>
+              <Route path='/product/mouthwash/:id' element={<MainLayout><Mouthwashsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/perfume' element={<MainLayout><Perfumes/></MainLayout>}/>
+              <Route path='/product/perfume/:id' element={<MainLayout><Perfumessingle/></MainLayout>}/>
+               <Route path='/category/toiletries/sanitary' element={<MainLayout><Sanitary/></MainLayout>}/>
+              <Route path='/product/sanitary/:id' element={<MainLayout><Sanitarysingle/></MainLayout>}/>
+               <Route path='/category/toiletries/saving' element={<MainLayout><Saving/></MainLayout>}/>
+              <Route path='/product/saving/:id' element={<MainLayout><Savingsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/shampo' element={<MainLayout><Shampo/></MainLayout>}/>
+              <Route path='/product/shampo/:id' element={<MainLayout><Shamposingle/></MainLayout>}/>
+               <Route path='/category/toiletries/showergel' element={<MainLayout><Showergel/></MainLayout>}/>
+              <Route path='/product/showergel/:id' element={<MainLayout><Showergelsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/skincare' element={<MainLayout><Skincare/></MainLayout>}/>
+              <Route path='/product/skincare/:id' element={<MainLayout><Skincaresingle/></MainLayout>}/>
+               <Route path='/category/toiletries/soapbar' element={<MainLayout><Soapbar/></MainLayout>}/>
+              <Route path='/product/soapbar/:id' element={<MainLayout><Soapbarsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/toothbrush' element={<MainLayout><Toothbrush/></MainLayout>}/>
+              <Route path='/product/toothbrush/:id' element={<MainLayout><Toothbrushsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/toothpast' element={<MainLayout><Toothpast/></MainLayout>}/>
+              <Route path='/product/toothpast/:id' element={<MainLayout><Toothpastsingle/></MainLayout>}/>
+               <Route path='/category/toiletries/africa' element={<MainLayout><Africa/></MainLayout>}/>
+              <Route path='/product/africa/:id' element={<MainLayout><Africasingle/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </div>
