@@ -103,8 +103,8 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
              <div><h4 className='text-center text-danger mt-3'>FoodandDrink Catagories</h4><hr></hr></div >
              <div className='d-flex ps-5 list-unstyled listsett'>
               <div>
-            <li><Link to="/food" className="dropdown-item mt-2 ps-5">Food</Link></li>
-            <li><Link to="/drink" className="dropdown-item ps-5 pt-2">Drink</Link></li>
+            <li><u><Link to="/food" className="dropdown-item mt-2 ps-5">Food</Link></u></li>
+            <li><u><Link to="/drink" className="dropdown-item ps-5 pt-2">Drink</Link></u></li>
             </div>
            <div className='text-center'>
             <img src='/Images/sidebanner/bathroom.jpg' className='w-50 h-100 ms-5  mt-4 poundsideimages poundsideimage' />
@@ -125,9 +125,9 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
              <div><h4 className='text-center text-danger mt-3'>Smoking Catagories</h4><hr></hr></div>
               <div className='d-flex ps-5 list-unstyled listsett'>
                 <div>
-            <li><Link to="/lighter" className="dropdown-item ps-5">Lighter & Matches</Link></li>
-            <li><Link to="/electrical" className="dropdown-item ps-5">Electrical</Link></li>
-            <li><Link to="/smoking" className="dropdown-item ps-5">Smoking Essential</Link></li>
+            <li><u><Link to="/lighter" className="dropdown-item ps-5">Lighter & Matches</Link></u></li>
+            <li><u><Link to="/electrical" className="dropdown-item ps-5">Electrical</Link></u></li>
+            <li><u><Link to="/smoking" className="dropdown-item ps-5">Smoking Essential</Link></u></li>
             </div>
             <div className='text-center'>
             <img src='/Images/sidebanner/smoking product.jpg' className='w-75 h-100 ms-5  mt-4 poundsideimages poundsideimage' />
@@ -148,12 +148,12 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <hr/></div>
             <div className='d-flex ps-5 list-unstyled listsett'>
             <div className=''>
-            <li><Link to="/category/poundline/bathroom" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Bathroom/Cosmetic</Link></li>
-            <li><Link to="/category/poundline/firstaid" className="dropdown-item  ps-5">First Aid</Link></li>
-            <li><Link to="/category/poundline/electric" className="dropdown-item  ps-5">Electrical</Link></li>
-            <li><Link to="/category/poundline/disposible" className="dropdown-item  ps-5">Disposable/Din Liners</Link></li>
-            <li><Link to="/category/poundline/shoecare" className="dropdown-item  ps-5">Shoe Care</Link></li>
-            <li><Link to="/category/poundline" className="dropdown-item  ps-5">View All</Link></li>
+            <li><u><Link to="/category/poundline/bathroom" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Bathroom/Cosmetic</Link></u></li>
+            <li><u><Link to="/category/poundline/firstaid" className="dropdown-item  ps-5">First Aid</Link></u></li>
+            <li><u><Link to="/category/poundline/electric" className="dropdown-item  ps-5">Electrical</Link></u></li>
+            <li><u><Link to="/category/poundline/disposible" className="dropdown-item  ps-5">Disposable/Din Liners</Link></u></li>
+            <li><u><Link to="/category/poundline/shoecare" className="dropdown-item  ps-5">Shoe Care</Link></u></li>
+            <li><u><Link to="/category/poundline" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
             <div>
             <img src='/Images/sidebanner/pound lines.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
@@ -174,13 +174,13 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <hr/></div>
              <div className='d-flex ps-5 list-unstyled listsett'>
             <div className=''>
-            <li><Link to="/category/bathroom/bathroomscale" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Bathroon Scales</Link></li>
-            <li><Link to="/category/bathroom/bathroommirror" className="dropdown-item  ps-5">Mirror</Link></li>
-            <li><Link to="/category/bathroom/shower" className="dropdown-item  ps-5">Shower Curtains</Link></li>
-            <li><Link to="/category/bathroom/bathmats" className="dropdown-item  ps-5">Bath Mats</Link></li>
-            <li><Link to="/category/bathroom/bathroomaccessories" className="dropdown-item  ps-5">Bathroom Accessories </Link></li>
+            <li><u><Link to="/category/bathroom/bathroomscale" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Bathroon Scales</Link></u></li>
+            <li><u><Link to="/category/bathroom/bathroommirror" className="dropdown-item  ps-5">Mirror</Link></u></li>
+            <li><u><Link to="/category/bathroom/shower" className="dropdown-item  ps-5">Shower Curtains</Link></u></li>
+            <li><u><Link to="/category/bathroom/bathmats" className="dropdown-item  ps-5">Bath Mats</Link></u></li>
+            <li><u><Link to="/category/bathroom/bathroomaccessories" className="dropdown-item  ps-5">Bathroom Accessories </Link></u></li>
             
-            <li><Link to="/category/bathroom" className="dropdown-item  ps-5">View All</Link></li>
+            <li><u><Link to="/category/bathroom" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
             <div>
             <img src='/Images/sidebanner/bathroom.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
@@ -201,13 +201,13 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <hr/></div>
              <div className='d-flex ps-5 list-unstyled listsett'>
             <div className=''>
-            <li><Link to="/category/laundry/airers" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Airers</Link></li>
-            <li><Link to="/category/loundry/ironingboards" className="dropdown-item  ps-5">Ironing Boards</Link></li>
-            <li><Link to="/category/loundry/laundryaccessories" className="dropdown-item  ps-5">Laundry Accessories</Link></li>
-            <li><Link to="/category/loundry/bags" className="dropdown-item  ps-5">Laundry Bags</Link></li>
-            <li><Link to="/category/loundry/baskets" className="dropdown-item  ps-5">Laundry Baskets</Link></li>
+            <li><u><Link to="/category/laundry/airers" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Airers</Link></u></li>
+            <li><u><Link to="/category/loundry/ironingboards" className="dropdown-item  ps-5">Ironing Boards</Link></u></li>
+            <li><u><Link to="/category/loundry/laundryaccessories" className="dropdown-item  ps-5">Laundry Accessories</Link></u></li>
+            <li><u><Link to="/category/loundry/bags" className="dropdown-item  ps-5">Laundry Bags</Link></u></li>
+            <li><u><Link to="/category/loundry/baskets" className="dropdown-item  ps-5">Laundry Baskets</Link></u></li>
             
-            <li><Link to="/category/loundry" className="dropdown-item  ps-5">View All</Link></li>
+            <li><u><Link to="/category/loundry" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
             <div>
             <img src='/Images/sidebanner/laundary.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
@@ -229,13 +229,13 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <hr/></div>
              <div className='d-flex ps-5 list-unstyled listsett'>
             <div className=''>
-            <li><Link to="/category/kitechenwear/cutlery" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Cutlery / Cutlery Set</Link></li>
-            <li><Link to="/category/kitechenwear/bakeware" className="dropdown-item  ps-5">Bakeweare</Link></li>
-            <li><Link to="/category/kitechenwear/chrome" className="dropdown-item  ps-5">Chrome</Link></li>
-            <li><Link to="/category/kitechenwear/cookware" className="dropdown-item  ps-5">Cookware</Link></li>
-            <li><Link to="/category/kitechenwear/kettles" className="dropdown-item  ps-5">Kettles</Link></li>
+            <li><u><Link to="/category/kitechenwear/cutlery" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Cutlery / Cutlery Set</Link></u></li>
+            <li><u><Link to="/category/kitechenwear/bakeware" className="dropdown-item  ps-5">Bakeweare</Link></u></li>
+            <li><u><Link to="/category/kitechenwear/chrome" className="dropdown-item  ps-5">Chrome</Link></u></li>
+            <li><u><Link to="/category/kitechenwear/cookware" className="dropdown-item  ps-5">Cookware</Link></u></li>
+            <li><u><Link to="/category/kitechenwear/kettles" className="dropdown-item  ps-5">Kettles</Link></u></li>
             
-            <li><Link to="/kitechenware" className="dropdown-item  ps-5">View All</Link></li>
+            <li><u><Link to="/kitechenware" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
             <div>
             <img src='/Images/sidebanner/kitchenware.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
@@ -257,13 +257,13 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <hr/></div>
             <div className='d-flex ps-5 list-unstyled listsett'>
             <div className=''>
-            <li><Link to="/category/cleaning/sponge" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Sponge Scourer</Link></li>
-            <li><Link to="/category/cleaning/mops" className="dropdown-item  ps-5">Mops/Squeegees</Link></li>
-            <li><Link to="/category/cleaning/gloves" className="dropdown-item  ps-5">GLoves</Link></li>
-            <li><Link to="/category/cleaning/duster" className="dropdown-item  ps-5">Cloths & Duster</Link></li>
-            <li><Link to="/category/cleaning/brushware" className="dropdown-item  ps-5">Brushware</Link></li>
+            <li><u><Link to="/category/cleaning/sponge" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Sponge Scourer</Link></u></li>
+            <li><u><Link to="/category/cleaning/mops" className="dropdown-item  ps-5">Mops/Squeegees</Link></u></li>
+            <li><u><Link to="/category/cleaning/gloves" className="dropdown-item  ps-5">GLoves</Link></u></li>
+            <li><u><Link to="/category/cleaning/duster" className="dropdown-item  ps-5">Cloths & Duster</Link></u></li>
+            <li><u><Link to="/category/cleaning/brushware" className="dropdown-item  ps-5">Brushware</Link></u></li>
             
-            <li><Link to="/cleaning" className="dropdown-item  ps-5">View All</Link></li>
+            <li><u><Link to="/cleaning" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
             <div>
             <img src='/Images/sidebanner/cleaning.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
@@ -285,13 +285,13 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <hr/></div>
              <div className='d-flex ps-5 list-unstyled listsett'>
             <div className=''>
-            <li><Link to="/category/gardening/bbq" className="dropdown-item mt-2 ps-5 fs-5 fw-2">BBQ</Link></li>
-            <li><Link to="/category/gardening/camping" className="dropdown-item  ps-5">Camping</Link></li>
-            <li><Link to="/category/gardening/fertilizer" className="dropdown-item  ps-5">Fertilisrs & Chemicals</Link></li>
-            <li><Link to="/category/gardening/furnitur" className="dropdown-item  ps-5">Furniture</Link></li>
-            <li><Link to="/category/gardening/giftware" className="dropdown-item  ps-5">Giftware & Ornaments</Link></li>
+            <li><u><Link to="/category/gardening/bbq" className="dropdown-item mt-2 ps-5 fs-5 fw-2">BBQ</Link></u></li>
+            <li><u><Link to="/category/gardening/camping" className="dropdown-item  ps-5">Camping</Link></u></li>
+            <li><u><Link to="/category/gardening/fertilizer" className="dropdown-item  ps-5">Fertilisrs & Chemicals</Link></u></li>
+            <li><u><Link to="/category/gardening/furnitur" className="dropdown-item  ps-5">Furniture</Link></u></li>
+            <li><u><Link to="/category/gardening/giftware" className="dropdown-item  ps-5">Giftware & Ornaments</Link></u></li>
             
-            <li><Link to="/gardening" className="dropdown-item  ps-5">View All</Link></li>
+            <li><u><Link to="/gardening" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
             <div>
             <img src='/Images/sidebanner/gardening.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
@@ -313,13 +313,13 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <hr/></div>
             <div className='d-flex ps-5 list-unstyled listsett'>
             <div className=''>
-            <li><Link to="/category/gardening/bbq" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Cotton Wool/Buds</Link></li>
-            <li><Link to="/category/gardening/camping" className="dropdown-item  ps-5">Babay Care</Link></li>
-            <li><Link to="/category/gardening/fertilizer" className="dropdown-item  ps-5">Gift Sets</Link></li>
-            <li><Link to="/category/gardening/furnitur" className="dropdown-item  ps-5">Hair Products</Link></li>
-            <li><Link to="/category/gardening/giftware" className="dropdown-item  ps-5">Hand Wash</Link></li>
+            <li><u><Link to="/category/gardening/bbq" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Cotton Wool/Buds</Link></u></li>
+            <li><u><Link to="/category/gardening/camping" className="dropdown-item  ps-5">Babay Care</Link></u></li>
+            <li><u><Link to="/category/gardening/fertilizer" className="dropdown-item  ps-5">Gift Sets</Link></u></li>
+            <li><u><Link to="/category/gardening/furnitur" className="dropdown-item  ps-5">Hair Products</Link></u></li>
+            <li><u><Link to="/category/gardening/giftware" className="dropdown-item  ps-5">Hand Wash</Link></u></li>
             
-            <li><Link to="/tolitries" className="dropdown-item  ps-5">View All</Link></li>
+            <li><u><Link to="/tolitries" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
             <div>
             <img src='/Images/sidebanner/toileteries.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
@@ -339,15 +339,21 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
           <ol className="collapse submenu-right canvas" id="luxurySubmenu">
             <div><h4 className='text-center text-danger mt-3'>Home & Decor Catagories</h4>
             <hr/></div>
-            <div>
-            <li><u><a href="#" className="dropdown-item mt-2 ps-5">St George/England</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Candles</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Fathers Day</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Frames & Mirrors</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Giftware</a></u></li>
+              <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/gardening/bbq" className="dropdown-item mt-2 ps-5 fs-5 fw-2">St George/England</Link></u></li>
+            <li><u><Link to="/category/gardening/camping" className="dropdown-item  ps-5">Candles</Link></u></li>
+            <li><u><Link to="/category/gardening/fertilizer" className="dropdown-item  ps-5">Fathers Day</Link></u></li>
+            <li><u><Link to="/category/gardening/furnitur" className="dropdown-item  ps-5">Frames & Mirrors</Link></u></li>
+            <li><u><Link to="/category/gardening/giftware" className="dropdown-item  ps-5">Giftware</Link></u></li>
+            
             <li><u><Link to="/homedecor" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
-          </ol>
+            <div>
+            <img src='/Images/sidebanner/home & decor.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+            </ol>
         </li>
         <li className="dropdown-item h5">
           <a
@@ -360,16 +366,20 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
           <ol className="collapse submenu-right canvas" id="luxurySubmenu">
             <div><h4 className='text-center text-danger mt-3'>Diy Catagories</h4>
             <hr/></div>
-            <div className='d-flex'>
+             <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/diye/barrettine" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Barrettine</Link></u></li>
+            <li><u><Link to="/category/diye/bartolin" className="dropdown-item  ps-5">Bartoline</Link></u></li>
+            <li><u><Link to="/category/diye/birdbrand" className="dropdown-item  ps-5">Bird Brand</Link></u></li>
+            <li><u><Link to="/category/diye/black" className="dropdown-item  ps-5">Blackspur/Pro User</Link></u></li>
+            <li><u><Link to="/category/diye/bonit" className="dropdown-item  ps-5">Bondit</Link></u></li>
+            
+            <li><u><Link to="/diy" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
             <div>
-            <li><u><a href="#" className="dropdown-item mt-2 ps-5">Barrettine</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Bartoline</a></u></li>
-            <li><u><a href="#" className="dropdown-item ps-5 ">Bird Brand</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Blackspur/Pro User</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Bondit</a></u></li>
-           <li><u><Link to="/diy" className="dropdown-item  ps-5">View All</Link></u></li>
-              </div>
-               </div>
+            <img src='/Images/sidebanner/diy.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
           </ol>
         </li>
          <li className="dropdown-item h5">
@@ -383,14 +393,21 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
           <ol className="collapse submenu-right canvas" id="luxurySubmenu">
             <div><h4 className='text-center text-danger mt-3'>HouseHold Cleaners Catagories</h4>
             <hr/></div>
-            <div>
-            <li><u><a href="#" className="dropdown-item mt-2 ps-5">Air Freshner </a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Bathroom Cleaners</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Bathroom Bleach</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Car Care</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Carpet</a></u></li>
-           <li><u><Link to="/houseclaner" className="dropdown-item  ps-5">View All</Link></u></li>
+              <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/housecleaner/freshner" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Air Freshner</Link></u></li>
+            <li><u><Link to="/category/housecleaner/bleech" className="dropdown-item  ps-5">Bathroom Bleach</Link></u></li>
+            <li><u><Link to="/category/housecleaner/car" className="dropdown-item  ps-5">Car Care</Link></u></li>
+            <li><u><Link to="/category/gardening/camping" className="dropdown-item  ps-5">Bathroom Cleaners</Link></u></li>
+            <li><u><Link to="/category/gardening/giftware" className="dropdown-item  ps-5">Carpet</Link></u></li>
+            
+            <li><u><Link to="/houseclaner" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
+            <div>
+            <img src='/Images/sidebanner/household cleaner.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+           
           </ol>
         </li>
         <li className="dropdown-item h5">
@@ -404,14 +421,21 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
           <ol className="collapse submenu-right canvas" id="luxurySubmenu">
             <div><h4 className='text-center text-danger mt-3'>Plastic Houseware Catagories</h4>
             <hr/></div>
-            <div>
-            <li><u><a href="#" className="dropdown-item mt-2 ps-5">Plastic Container</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Kids Plastic Product</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Deodorant/Bodysoray</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Plastic Bathroom Product</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Plastic Drawer Cabin</a></u></li>
-           <li><u><Link to="/plastichouseware" className="dropdown-item ps-5">View All</Link></u></li>
+              <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/plastichousewear/foodcon" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Plastic Container</Link></u></li>
+            <li><u><Link to="/category/plastichousewear/kidsplastic" className="dropdown-item  ps-5">Kids Plastic Product</Link></u></li>
+            <li><u><Link to="/category/plastichousewear/melamine" className="dropdown-item  ps-5">Deodorant/Bodysoray</Link></u></li>
+            <li><u><Link to="/category/plastichousewear/kidsbathroom" className="dropdown-item  ps-5">Plastic Bathroom Product</Link></u></li>
+            <li><u><Link to="/category/plastichousewear/plasticcabnit" className="dropdown-item  ps-5">Plastic Drawer Cabin</Link></u></li>
+            
+            <li><u><Link to="/plastichouseware" className="dropdown-item  ps-5">View All</Link></u></li>
             </div>
+            <div>
+            <img src='/Images/sidebanner/plastic houseware.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+           
           </ol>
         </li>
       </ul>

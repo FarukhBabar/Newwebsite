@@ -45,7 +45,7 @@ const Homedecor = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/souvenirs'><img src="/Images/home & decor/9.jpg" alt className="h-100 w-100 mt-md-0 mt-2 poundsideimage" /></Link>
+        <Link to='/category/homedecore/souvenirs'><img src="/Images/home & decor/9.jpg" alt className="h-100 w-100 mt-md-0 mt-2 poundsideimage" /></Link>
       </div>
     </div>
   </div>

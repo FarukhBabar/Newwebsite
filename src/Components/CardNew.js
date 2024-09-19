@@ -1,5 +1,46 @@
+// import React from 'react';
+// import { useNavigate } from 'react-router-dom';
+
+// const CardNew = ({ user, baseUrl }) => {
+//   const navigate = useNavigate();
+
+//   const handleImageClick = () => {
+//     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+//     navigate(`${baseUrl}/${productName}`, { state: { id: user._id } });
+//   };
+
+//   console.log('CardNew component user:', user);
+
+//   return (
+//     <div className="col-6 col-sm-2 col-md-4 col-lg-3 mt-5">
+//       <div className="card11212">
+//         <h5 className="image">
+//           <div onClick={handleImageClick} className="btn">
+//             {user.image && (
+//               <img
+//                 src={`https://api.homeessentialshive.co.uk/${user.image}`}
+//                 alt={user.name}
+//                 className="img-fluid border"
+//                 style={{ height: '60%', width: '99%' }}
+//               />
+//             )}
+//           </div>
+//         </h5>
+//         <h5 className="ms-2">{user.name.slice(0, 25)}</h5>
+//         <p dangerouslySetInnerHTML={{ __html: user.title.slice(0, 25) }}></p>
+//         <center>
+//           <button className="btn btn-success mb-2 w-100">Shop now</button>
+//         </center>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CardNew;
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../Components/assets/Style.css'; // Import custom styles
 
 const CardNew = ({ user, baseUrl }) => {
   const navigate = useNavigate();
@@ -9,29 +50,27 @@ const CardNew = ({ user, baseUrl }) => {
     navigate(`${baseUrl}/${productName}`, { state: { id: user._id } });
   };
 
-  console.log('CardNew component user:', user);
-
   return (
     <div className="col-6 col-sm-2 col-md-4 col-lg-3 mt-5">
-      <div className="card11212">
-        <h5 className="image">
-          <div onClick={handleImageClick} className="btn">
-            {user.image && (
-              <img
-                src={`https://api.homeessentialshive.co.uk/${user.image}`}
-                alt={user.name}
-                className="img-fluid border"
-                style={{ height: '60%', width: '99%' }}
-              />
-            )}
-          </div>
-        </h5>
-        <h5 className="ms-2">{user.name.slice(0, 25)}</h5>
-        <p dangerouslySetInnerHTML={{ __html: user.title.slice(0, 25) }}></p>
-        <center>
-          <button className="btn btn-success mb-2 w-100">Shop now</button>
-        </center>
+    <div className="product-card">
+      <div className="product-image" onClick={handleImageClick}>
+        {user.image && (
+          <img
+            src={`https://api.homeessentialshive.co.uk/${user.image}`}
+            alt={user.name}
+            className="product-img"
+          />
+        )}
       </div>
+      <div className="product-info">
+        <h5 className="product-name">{user.name.slice(0, 25)}</h5>
+        <p
+          className="product-description"
+          dangerouslySetInnerHTML={{ __html: user.title.slice(0, 50) }}
+        ></p>
+        <button className="shop-now-btn">Shop now</button>
+      </div>
+    </div>
     </div>
   );
 };

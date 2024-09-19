@@ -234,6 +234,54 @@ import Toothpast from './Components/Main PAges/Tolitires/Toothpast/Toothpast'
 import Toothpastsingle from './Components/Main PAges/Tolitires/Toothpast/Toothpastsingl'
 import Africa from './Components/Main PAges/Tolitires/west Africa/Africa'
 import Africasingle from './Components/Main PAges/Tolitires/west Africa/Africasingl'
+import Candel from './Components/Main PAges/Home decore/Candels/Candel'
+import Candelsingl from './Components/Main PAges/Home decore/Candels/Candelsingl'
+import Fatherdays from './Components/Main PAges/Home decore/Fatherdays/Fatherdays'
+import Fatherdayssingl from './Components/Main PAges/Home decore/Fatherdays/Fatherdayssingl'
+import Framsmirror from './Components/Main PAges/Home decore/Frams&mirror/Framsmirror'
+import Framsmirrorsingl from './Components/Main PAges/Home decore/Frams&mirror/Framsmirrorsingl'
+import Giftwarehome from './Components/Main PAges/Home decore/Giftwarehome/Giftwarehome'
+import Giftwarehomesingl from './Components/Main PAges/Home decore/Giftwarehome/Giftwarehomesingl'
+import Incense from './Components/Main PAges/Home decore/Incense/Incense'
+import Incensesingl from './Components/Main PAges/Home decore/Incense/Incensesingl'
+import Memorials from './Components/Main PAges/Home decore/Memorials/Memorials'
+import Memorialssingl from './Components/Main PAges/Home decore/Memorials/Memorialssingl'
+import Souvenirs from './Components/Main PAges/Home decore/Souvenirs/Souvenirs'
+import Souvenirssingl from './Components/Main PAges/Home decore/Souvenirs/Souvenirssingl'
+import St from './Components/Main PAges/Home decore/St George/St'
+import Stsingal from './Components/Main PAges/Home decore/St George/Stsingal'
+import Weeding from './Components/Main PAges/Home decore/Weeding/Weeding'
+import Weedingsingal from './Components/Main PAges/Home decore/Weeding/Weedingsingl'
+import Freshn from './Components/Main PAges/HouseCleaner/Airfresh/Freshn'
+import Freshnsingle from './Components/Main PAges/HouseCleaner/Airfresh/Freshnsingle'
+import Bleech from './Components/Main PAges/HouseCleaner/Bleech/Bleech'
+import Bleechsingl from './Components/Main PAges/HouseCleaner/Bleech/Bleechsingl'
+import Car from './Components/Main PAges/HouseCleaner/Carcare/Car'
+import Carsingle from './Components/Main PAges/HouseCleaner/Carcare/Carsingle'
+import Foodcon from './Components/Main PAges/Plasticshousewear/FoodContainer/Foodcon'
+import Foodconsingl from './Components/Main PAges/Plasticshousewear/FoodContainer/Foodconsingl'
+import Handwash from './Components/Main PAges/Plasticshousewear/Handwash/Handwash'
+import Handwashsingl from './Components/Main PAges/Plasticshousewear/Handwash/Handwashsingl'
+import Healthcaree from './Components/Main PAges/Plasticshousewear/Healthcare/Healthcaree'
+import Healthcareesingl from './Components/Main PAges/Plasticshousewear/Healthcare/Healthcareesingl'
+import Kidsplas from './Components/Main PAges/Plasticshousewear/Kids Plastic Products/Kidsplas'
+import Kidsplassingl from './Components/Main PAges/Plasticshousewear/Kids Plastic Products/Kidsplassingl'
+import MelamineOutdoor from './Components/Main PAges/Plasticshousewear/MelamineOutdoor/MelamineOutdoor'
+import MelamineOutdoorsingl from './Components/Main PAges/Plasticshousewear/MelamineOutdoor/MelamineOutdoorsingl'
+import Kidsbathrom from './Components/Main PAges/Plasticshousewear/Plastic Bathroom Products/Kidsbathrom'
+import Kidsbathromsingl from './Components/Main PAges/Plasticshousewear/Plastic Bathroom Products/Kidsbathromsingl'
+import Plasticcabnit from './Components/Main PAges/Plasticshousewear/Plastic Drawer Cabinet/Plasticcabnit'
+import Plasticcabnitsingl from './Components/Main PAges/Plasticshousewear/Plastic Drawer Cabinet/Plasticcabnitsingl'
+import Barrettine from './Components/Main PAges/Diy/Barrettine/Barrettine'
+import Barrettinesingle from './Components/Main PAges/Diy/Barrettine/Barrettinesingl'
+import Bartolin from './Components/Main PAges/Diy/Bartolin/Bartolin'
+import Bartolinsingle from './Components/Main PAges/Diy/Bartolin/Bartolinsingl'
+import Birdbrand from './Components/Main PAges/Diy/Birdbrand/Birdbrand'
+import Birdbrandsingle from './Components/Main PAges/Diy/Birdbrand/Birdbrandsingl'
+import Black from './Components/Main PAges/Diy/Blackspur/Black'
+import Blacksingle from './Components/Main PAges/Diy/Blackspur/Blacksingl'
+import Bonit from './Components/Main PAges/Diy/Bondit/Bonit'
+import Bonitsingle from './Components/Main PAges/Diy/Bondit/Bonitsingl'
 const AdminLayout = ({ children }) => (
   
   <>
@@ -506,6 +554,58 @@ const App = () => {
               <Route path='/product/toothpast/:id' element={<MainLayout><Toothpastsingle/></MainLayout>}/>
                <Route path='/category/toiletries/africa' element={<MainLayout><Africa/></MainLayout>}/>
               <Route path='/product/africa/:id' element={<MainLayout><Africasingle/></MainLayout>}/>
+
+               <Route path='/category/homedecore/candel' element={<MainLayout><Candel/></MainLayout>}/>
+              <Route path='/product/candel/:id' element={<MainLayout><Candelsingl/></MainLayout>}/>
+               <Route path='/category/homedecore/fathersday' element={<MainLayout><Fatherdays/></MainLayout>}/>
+              <Route path='/product/fathersday/:id' element={<MainLayout><Fatherdayssingl/></MainLayout>}/>
+               <Route path='/category/homedecore/framsmirror' element={<MainLayout><Framsmirror/></MainLayout>}/>
+              <Route path='/product/framsmirror/:id' element={<MainLayout><Framsmirrorsingl/></MainLayout>}/>
+               <Route path='/category/homedecore/giftwareh' element={<MainLayout><Giftwarehome/></MainLayout>}/>
+              <Route path='/product/giftwareh/:id' element={<MainLayout><Giftwarehomesingl/></MainLayout>}/>
+               <Route path='/category/homedecore/incense' element={<MainLayout><Incense/></MainLayout>}/>
+              <Route path='/product/incense/:id' element={<MainLayout><Incensesingl/></MainLayout>}/>
+               <Route path='/category/homedecore/memorial' element={<MainLayout><Memorials/></MainLayout>}/>
+              <Route path='/product/memorial/:id' element={<MainLayout><Memorialssingl/></MainLayout>}/>
+               <Route path='/category/homedecore/souvenirs' element={<MainLayout><Souvenirs/></MainLayout>}/>
+              <Route path='/product/souvenirs/:id' element={<MainLayout><Souvenirssingl/></MainLayout>}/>
+               <Route path='/category/homedecore/st' element={<MainLayout><St/></MainLayout>}/>
+              <Route path='/product/st/:id' element={<MainLayout><Stsingal/></MainLayout>}/>
+               <Route path='/category/homedecore/wedding' element={<MainLayout><Weeding/></MainLayout>}/>
+              <Route path='/product/wedding/:id' element={<MainLayout><Weedingsingal/></MainLayout>}/>
+
+              <Route path='/category/housecleaner/freshner' element={<MainLayout><Freshn/></MainLayout>}/>
+              <Route path='/product/freshner/:id' element={<MainLayout><Freshnsingle/></MainLayout>}/>
+              <Route path='/category/housecleaner/bleech' element={<MainLayout><Bleech/></MainLayout>}/>
+              <Route path='/product/bleech/:id' element={<MainLayout><Bleechsingl/></MainLayout>}/>
+              <Route path='/category/housecleaner/car' element={<MainLayout><Car/></MainLayout>}/>
+              <Route path='/product/car/:id' element={<MainLayout><Carsingle/></MainLayout>}/>
+
+              <Route path='/category/plastichousewear/foodcon' element={<MainLayout><Foodcon/></MainLayout>}/>
+              <Route path='/product/foodcon/:id' element={<MainLayout><Foodconsingl/></MainLayout>}/>
+              <Route path='/category/plastichousewear/plastickitechenware' element={<MainLayout><Handwash/></MainLayout>}/>
+              <Route path='/product/plastickitechenware/:id' element={<MainLayout><Handwashsingl/></MainLayout>}/>
+              <Route path='/category/plastichousewear/storageboxes' element={<MainLayout><Healthcaree/></MainLayout>}/>
+              <Route path='/product/storageboxes/:id' element={<MainLayout><Healthcareesingl/></MainLayout>}/>
+              <Route path='/category/plastichousewear/kidsplastic' element={<MainLayout><Kidsplas/></MainLayout>}/>
+              <Route path='/product/kidsplastic/:id' element={<MainLayout><Kidsplassingl/></MainLayout>}/>
+              <Route path='/category/plastichousewear/melamine' element={<MainLayout><MelamineOutdoor/></MainLayout>}/>
+              <Route path='/product/melamine/:id' element={<MainLayout><MelamineOutdoorsingl/></MainLayout>}/>
+              <Route path='/category/plastichousewear/kidsbathroom' element={<MainLayout><Kidsbathrom/></MainLayout>}/>
+              <Route path='/product/kidsbathroom/:id' element={<MainLayout><Kidsbathromsingl/></MainLayout>}/>
+              <Route path='/category/plastichousewear/plasticcabnit' element={<MainLayout><Plasticcabnit/></MainLayout>}/>
+              <Route path='/product/plasticcabnit/:id' element={<MainLayout><Plasticcabnitsingl/></MainLayout>}/>
+
+              <Route path='/category/diy/barrettine' element={<MainLayout><Barrettine/></MainLayout>}/>
+              <Route path='/product/barrettine/:id' element={<MainLayout><Barrettinesingle/></MainLayout>}/>
+              <Route path='/category/diy/bartolin' element={<MainLayout><Bartolin/></MainLayout>}/>
+              <Route path='/product/bartolin/:id' element={<MainLayout><Bartolinsingle/></MainLayout>}/>
+              <Route path='/category/diy/birdbrand' element={<MainLayout><Birdbrand/></MainLayout>}/>
+              <Route path='/product/birdbrand/:id' element={<MainLayout><Birdbrandsingle/></MainLayout>}/>
+              <Route path='/category/diy/black' element={<MainLayout><Black/></MainLayout>}/>
+              <Route path='/product/black/:id' element={<MainLayout><Blacksingle/></MainLayout>}/>
+              <Route path='/category/diy/bonit' element={<MainLayout><Bonit/></MainLayout>}/>
+              <Route path='/product/bonit/:id' element={<MainLayout><Bonitsingle/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </div>

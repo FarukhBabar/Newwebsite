@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Bathmatscards from './Bathmatscards';
+import CardNew from '../../../CardNew'; // Make sure the path is correct
 
-const  Bathmatspages = () => {
+const Bathmatspages = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -13,14 +12,14 @@ const  Bathmatspages = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Bathmatscards key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/product/bathroom" />
         ))}
       </div>
     </div>
   );
 }
 
-export default  Bathmatspages;
+export default Bathmatspages;

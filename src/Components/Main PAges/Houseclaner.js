@@ -7,7 +7,7 @@ const Houseclaner = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/freshn"><img src="/Images/cleaning material/117.jpg" alt className="h-100 w-100 mt-md-0 mt-2 poundsideimage" /></Link>   
+        <Link to="/category/housecleaner/freshner"><img src="/Images/cleaning material/117.jpg" alt className="h-100 w-100 mt-md-0 mt-2 poundsideimage" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -17,12 +17,12 @@ const Houseclaner = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/bleech"> <img src="/Images/cleaning material/119.jpg" alt className="h-100 w-100 mt-md-0 mt-2 poundsideimage" /></Link>
+        <Link to="/category/housecleaner/bleech"> <img src="/Images/cleaning material/119.jpg" alt className="h-100 w-100 mt-md-0 mt-2 poundsideimage" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/car'><img src="/Images/cleaning material/120.jpg" alt className="h-100 w-100 mt-md-0 mt-2 poundsideimage" /></Link>   
+        <Link to='/category/housecleaner/car'><img src="/Images/cleaning material/120.jpg" alt className="h-100 w-100 mt-md-0 mt-2 poundsideimage" /></Link>   
       </div>
     </div>
   </div>
