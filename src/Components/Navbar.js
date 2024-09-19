@@ -107,7 +107,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><Link to="/drink" className="dropdown-item ps-5 pt-2">Drink</Link></li>
             </div>
            <div className='text-center'>
-            <img src='/Images/sidebanner/bathroom.jpg' className='w-50 h-100 ms-5  mt-4 poundsideimage' />
+            <img src='/Images/sidebanner/bathroom.jpg' className='w-50 h-100 ms-5  mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
           </ul>
@@ -130,7 +130,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><Link to="/smoking" className="dropdown-item ps-5">Smoking Essential</Link></li>
             </div>
             <div className='text-center'>
-            <img src='/Images/sidebanner/smoking product.jpg' className='w-75 h-100 ms-5  mt-4 poundsideimage' />
+            <img src='/Images/sidebanner/smoking product.jpg' className='w-75 h-100 ms-5  mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
           </ol>
@@ -156,7 +156,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><Link to="/category/poundline" className="dropdown-item  ps-5">View All</Link></li>
             </div>
             <div>
-            <img src='/Images/sidebanner/pound lines.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimage' />
+            <img src='/Images/sidebanner/pound lines.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
           </ol>
@@ -183,7 +183,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><Link to="/category/bathroom" className="dropdown-item  ps-5">View All</Link></li>
             </div>
             <div>
-            <img src='/Images/sidebanner/bathroom.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimage' />
+            <img src='/Images/sidebanner/bathroom.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
           </ol>
@@ -210,7 +210,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><Link to="/category/loundry" className="dropdown-item  ps-5">View All</Link></li>
             </div>
             <div>
-            <img src='/Images/sidebanner/laundary.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimage' />
+            <img src='/Images/sidebanner/laundary.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
            
@@ -238,7 +238,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><Link to="/kitechenware" className="dropdown-item  ps-5">View All</Link></li>
             </div>
             <div>
-            <img src='/Images/sidebanner/kitchenware.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimage' />
+            <img src='/Images/sidebanner/kitchenware.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
            
@@ -266,7 +266,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><Link to="/cleaning" className="dropdown-item  ps-5">View All</Link></li>
             </div>
             <div>
-            <img src='/Images/sidebanner/cleaning.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimage' />
+            <img src='/Images/sidebanner/cleaning.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
             
@@ -294,7 +294,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><Link to="/gardening" className="dropdown-item  ps-5">View All</Link></li>
             </div>
             <div>
-            <img src='/Images/sidebanner/gardening.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimage' />
+            <img src='/Images/sidebanner/gardening.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
             
@@ -311,18 +311,21 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
           <ol className="collapse submenu-right canvas" id="luxurySubmenu">
             <div><h4 className='text-center text-danger mt-3'>Toiletries Catagories</h4>
             <hr/></div>
-            <div className='d-flex'>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><Link to="/category/gardening/bbq" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Cotton Wool/Buds</Link></li>
+            <li><Link to="/category/gardening/camping" className="dropdown-item  ps-5">Babay Care</Link></li>
+            <li><Link to="/category/gardening/fertilizer" className="dropdown-item  ps-5">Gift Sets</Link></li>
+            <li><Link to="/category/gardening/furnitur" className="dropdown-item  ps-5">Hair Products</Link></li>
+            <li><Link to="/category/gardening/giftware" className="dropdown-item  ps-5">Hand Wash</Link></li>
+            
+            <li><Link to="/tolitries" className="dropdown-item  ps-5">View All</Link></li>
+            </div>
             <div>
-            <li><u><a href="#" className="dropdown-item mt-2 ps-5">Cotton Wool/Buds</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Babay Care</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Gift Sets</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Hair Products</a></u></li>
-            <li><u><a href="#" className="dropdown-item  ps-5">Hand Wash</a></u></li>
-           <li><u><Link to="/tolitries" className="dropdown-item  ps-5">View All</Link></u></li>
+            <img src='/Images/sidebanner/toileteries.jpg' className='w-75 h-80 ms-5 mt-4 poundsideimages poundsideimage' />
             </div>
-           
-             
             </div>
+            
           </ol>
         </li>
          <li className="dropdown-item h5">
