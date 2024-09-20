@@ -438,6 +438,106 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
            
           </ol>
         </li>
+         <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Artifical Flowers</a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Artifical Flowers Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/flowers/artifical" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Artifical Trees</Link></u></li>
+            <li><u><Link to="/category/flowers/bouquet" className="dropdown-item  ps-5">Bouquets</Link></u></li>
+            <li><u><Link to="/category/flowers/garland" className="dropdown-item  ps-5">Garlands</Link></u></li>
+            <li><u><Link to="/category/flowers/singlestem" className="dropdown-item  ps-5">Single Stems Liners</Link></u></li>
+            <li><u><Link to="/category/flowers" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/flower.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
+          <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Stationery Items</a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Stationery Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/stationery/artcraft" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Art & Craft </Link></u></li>
+            <li><u><Link to="/category/stationery/books" className="dropdown-item  ps-5">Books</Link></u></li>
+            <li><u><Link to="/category/stationery/diaries" className="dropdown-item  ps-5">Diaries</Link></u></li>
+            <li><u><Link to="/category/stationery/kids" className="dropdown-item  ps-5">Kids Statinoary </Link></u></li>
+            <li><u><Link to="/category/stationery" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/stationary.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
+          {/* <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Textile Accessories</a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Textile Accessories Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/textilesaccessories/aprons" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Aprons </Link></u></li>
+            <li><u><Link to="/category/textilesaccessories/bedding" className="dropdown-item  ps-5">Bedding</Link></u></li>
+            <li><u><Link to="/category/textilesaccessories/clothing" className="dropdown-item  ps-5">Clothing & Accessories</Link></u></li>
+            <li><u><Link to="/category/textilesaccessories/curtains" className="dropdown-item  ps-5">Curtains & Drayght </Link></u></li>
+            <li><u><Link to="/category/textilesaccessories" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/tetxtile and accessories.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Pet Products</a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Pet Product Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/petproducts/cat" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Cat Products </Link></u></li>
+            <li><u><Link to="/category/petproducts/birds" className="dropdown-item  ps-5">Bird Products</Link></u></li>
+            <li><u><Link to="/category/petproducts/dog" className="dropdown-item  ps-5">Dog Products</Link></u></li>
+            <li><u><Link to="/category/petproducts/fishproduct" className="dropdown-item  ps-5">Fish Product </Link></u></li>
+            <li><u><Link to="/category/petproducts" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/pets product.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li> */}
       </ul>
     </div>
   </div>

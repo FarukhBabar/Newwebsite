@@ -282,6 +282,55 @@ import Black from './Components/Main PAges/Diy/Blackspur/Black'
 import Blacksingle from './Components/Main PAges/Diy/Blackspur/Blacksingl'
 import Bonit from './Components/Main PAges/Diy/Bondit/Bonit'
 import Bonitsingle from './Components/Main PAges/Diy/Bondit/Bonitsingl'
+import Artificalmain from './Components/Main PAges/Artificalflowers/Artificalmain'
+import Artifical from './Components/Main PAges/Artificalflowers/Artificalflowers/Artifical'
+import Artificalsingel from './Components/Main PAges/Artificalflowers/Artificalflowers/Artificalsingl'
+import Bouquet from './Components/Main PAges/Artificalflowers/Bouquet/Bouquet'
+import Bouquetsingl from './Components/Main PAges/Artificalflowers/Bouquet/Bouquetsingl'
+import Garlands from './Components/Main PAges/Artificalflowers/Garlands/Garlands'
+import Garlandssingl from './Components/Main PAges/Artificalflowers/Garlands/Garlandssingl'
+import Singlestem from './Components/Main PAges/Artificalflowers/Singlestem/Singlestem'
+import Singlestemsingl from './Components/Main PAges/Artificalflowers/Singlestem/Singlestemsingl'
+import Wreaths from './Components/Main PAges/Artificalflowers/Wreaths/Wreaths'
+import Wreathssingl from './Components/Main PAges/Artificalflowers/Wreaths/Wreathssingl'
+import Stationerymain from './Components/Main PAges/Statinoery/Stationerymain'
+import Art from './Components/Main PAges/Statinoery/ART & Craft/Art'
+import Artsingle from './Components/Main PAges/Statinoery/ART & Craft/Artsingle'
+import Books from './Components/Main PAges/Statinoery/Books/Books'
+import Bookssingle from './Components/Main PAges/Statinoery/Books/Bookssingl'
+import Diaries from './Components/Main PAges/Statinoery/Diaries/Diaries'
+import Diariessingle from './Components/Main PAges/Statinoery/Diaries/Diariessingl'
+import Kids from './Components/Main PAges/Statinoery/Kids/Kids'
+import Kidssingle from './Components/Main PAges/Statinoery/Kids/Kidssingl'
+import Mailing from './Components/Main PAges/Statinoery/Mailing&packing/Mailing'
+import Mailingsingle from './Components/Main PAges/Statinoery/Mailing&packing/Mailingsingl'
+import Office from './Components/Main PAges/Statinoery/Office/Home/Office'
+import Officesingle from './Components/Main PAges/Statinoery/Office/Home/Officesingl'
+import Textilesmainpage from './Components/Main PAges/Textileaccessories/Textilesmainpage'
+import Aprons from './Components/Main PAges/Textileaccessories/Aprons/Aprons'
+import Apronssingle from './Components/Main PAges/Textileaccessories/Aprons/Apronssingle'
+import Bedding from './Components/Main PAges/Textileaccessories/Bedding/Bedding'
+import Beddingsingle from './Components/Main PAges/Textileaccessories/Bedding/Beddingsingle'
+import Clothing from './Components/Main PAges/Textileaccessories/Clothing/Clothing'
+import Clothingsingle from './Components/Main PAges/Textileaccessories/Clothing/Clothingsingle'
+import Curtains from './Components/Main PAges/Textileaccessories/Curtains/Curtains'
+import Curtainssingle from './Components/Main PAges/Textileaccessories/Curtains/Curtainssingl'
+import Tablecover from './Components/Main PAges/Textileaccessories/Tablecover/Tablecover'
+import Tablecoversingle from './Components/Main PAges/Textileaccessories/Tablecover/Tablecoversingl'
+import Teactowel from './Components/Main PAges/Textileaccessories/Teac&towel/Teactowel'
+import Teactowelsingle from './Components/Main PAges/Textileaccessories/Teac&towel/Teactowelsingl'
+import Towelaccess from './Components/Main PAges/Textileaccessories/Towel&accessories/Towelaccess'
+import Towelaccesssingle from './Components/Main PAges/Textileaccessories/Towel&accessories/Towelaccesssingl'
+import Petproductsmain from './Components/Main PAges/Pet products/Petproductsmain'
+import Birds from './Components/Main PAges/Pet products/Birdsproduct/Birds'
+import Cat from './Components/Main PAges/Pet products/Catproducts/Cat'
+import Catsingle from './Components/Main PAges/Pet products/Catproducts/Catsingle'
+import Secrup from './Components/Main PAges/Pet products/Secruplumb/Secrup'
+import Secrupsingl from './Components/Main PAges/Pet products/Secruplumb/Secrupsingl'
+import Velcro from './Components/Main PAges/Pet products/Velcro/Velcro'
+import Velcrosingl from './Components/Main PAges/Pet products/Velcro/Velcrosingl'
+import Werner from './Components/Main PAges/Pet products/Werner/Werner'
+import Wernersingl from './Components/Main PAges/Pet products/Werner/Wernersingl'
 const AdminLayout = ({ children }) => (
   
   <>
@@ -606,6 +655,60 @@ const App = () => {
               <Route path='/product/black/:id' element={<MainLayout><Blacksingle/></MainLayout>}/>
               <Route path='/category/diy/bonit' element={<MainLayout><Bonit/></MainLayout>}/>
               <Route path='/product/bonit/:id' element={<MainLayout><Bonitsingle/></MainLayout>}/>
+
+               <Route path='/category/flowers' element={<MainLayout><Artificalmain/></MainLayout>}/>
+                <Route path='/category/flowers/artifical' element={<MainLayout><Artifical/></MainLayout>}/>
+              <Route path='/product/artifical/:id' element={<MainLayout><Artificalsingel/></MainLayout>}/>
+                <Route path='/category/flowers/bouquet' element={<MainLayout><Bouquet/></MainLayout>}/>
+              <Route path='/product/bouquet/:id' element={<MainLayout><Bouquetsingl/></MainLayout>}/>
+                <Route path='/category/flowers/garland' element={<MainLayout><Garlands/></MainLayout>}/>
+              <Route path='/product/garland/:id' element={<MainLayout><Garlandssingl/></MainLayout>}/>
+                <Route path='/category/flowers/singlestem' element={<MainLayout><Singlestem/></MainLayout>}/>
+              <Route path='/product/singlestem/:id' element={<MainLayout><Singlestemsingl/></MainLayout>}/>
+                <Route path='/category/flowers/wreaths' element={<MainLayout><Wreaths/></MainLayout>}/>
+              <Route path='/product/wreaths/:id' element={<MainLayout><Wreathssingl/></MainLayout>}/>
+
+               <Route path='/category/stationery' element={<MainLayout><Stationerymain/></MainLayout>}/>
+               <Route path='/category/stationery/artcraft' element={<MainLayout><Art/></MainLayout>}/>
+              <Route path='/product/artcraft/:id' element={<MainLayout><Artsingle/></MainLayout>}/>
+               <Route path='/category/stationery/books' element={<MainLayout><Books/></MainLayout>}/>
+              <Route path='/product/books/:id' element={<MainLayout><Bookssingle/></MainLayout>}/>
+               <Route path='/category/stationery/diaries' element={<MainLayout><Diaries/></MainLayout>}/>
+              <Route path='/product/diaries/:id' element={<MainLayout><Diariessingle/></MainLayout>}/>
+               <Route path='/category/stationery/kids' element={<MainLayout><Kids/></MainLayout>}/>
+              <Route path='/product/kids/:id' element={<MainLayout><Kidssingle/></MainLayout>}/>
+              <Route path='/category/stationery/mailing' element={<MainLayout><Mailing/></MainLayout>}/>
+              <Route path='/product/mailing/:id' element={<MainLayout><Mailingsingle/></MainLayout>}/>
+              <Route path='/category/stationery/officehome' element={<MainLayout><Office/></MainLayout>}/>
+              <Route path='/product/officehome/:id' element={<MainLayout><Officesingle/></MainLayout>}/>
+
+            <Route path='/category/textilesaccessories' element={<MainLayout><Textilesmainpage/></MainLayout>}/>
+            <Route path='/category/textilesaccessories/aprons' element={<MainLayout><Aprons/></MainLayout>}/>
+            <Route path='/product/aprons/:id' element={<MainLayout><Apronssingle/></MainLayout>}/>
+            <Route path='/category/textilesaccessories/bedding' element={<MainLayout><Bedding/></MainLayout>}/>
+            <Route path='/product/bedding/:id' element={<MainLayout><Beddingsingle/></MainLayout>}/>
+            <Route path='/category/textilesaccessories/clothing' element={<MainLayout><Clothing/></MainLayout>}/>
+            <Route path='/product/clothing/:id' element={<MainLayout><Clothingsingle/></MainLayout>}/>
+            <Route path='/category/textilesaccessories/curtains' element={<MainLayout><Curtains/></MainLayout>}/>
+            <Route path='/product/curtains/:id' element={<MainLayout><Curtainssingle/></MainLayout>}/>
+            <Route path='/category/textilesaccessories/tablecover' element={<MainLayout><Tablecover/></MainLayout>}/>
+            <Route path='/product/tablecover/:id' element={<MainLayout><Tablecoversingle/></MainLayout>}/>
+            <Route path='/category/textilesaccessories/teatowel' element={<MainLayout><Teactowel/></MainLayout>}/>
+            <Route path='/product/teatowel/:id' element={<MainLayout><Teactowelsingle/></MainLayout>}/>
+            <Route path='/category/textilesaccessories/towelaccessories' element={<MainLayout><Towelaccess/></MainLayout>}/>
+            <Route path='/product/towelaccessories/:id' element={<MainLayout><Towelaccesssingle/></MainLayout>}/>
+
+             <Route path='/category/petproducts' element={<MainLayout><Petproductsmain/></MainLayout>}/>
+             <Route path='/category/petproducts/birds' element={<MainLayout><Birds/></MainLayout>}/>
+            <Route path='/product/birds/:id' element={<MainLayout><Birdsingle/></MainLayout>}/>
+             <Route path='/category/petproducts/cat' element={<MainLayout><Cat/></MainLayout>}/>
+            <Route path='/product/cat/:id' element={<MainLayout><Catsingle/></MainLayout>}/>
+             <Route path='/category/petproducts/dog' element={<MainLayout><Secrup/></MainLayout>}/>
+            <Route path='/product/dog/:id' element={<MainLayout><Secrupsingl/></MainLayout>}/>
+             <Route path='/category/petproducts/fishproduct' element={<MainLayout><Velcro/></MainLayout>}/>
+            <Route path='/product/fishproduct/:id' element={<MainLayout><Velcrosingl/></MainLayout>}/>
+             <Route path='/category/petproducts/pet' element={<MainLayout><Werner/></MainLayout>}/>
+            <Route path='/product/pet/:id' element={<MainLayout><Wernersingl/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </div>

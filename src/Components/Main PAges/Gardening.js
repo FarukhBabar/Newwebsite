@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Pageuparrow from '../Pageuparrow'
 
 const Gardening = () => {
   return (
@@ -74,6 +75,7 @@ const Gardening = () => {
   </div>
   
 </div>
+<Pageuparrow/>
     </div>
   )
 }

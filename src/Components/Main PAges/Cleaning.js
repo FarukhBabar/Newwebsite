@@ -1,6 +1,7 @@
 import React from 'react'
 // import '../../../../Style.css'
 import { Link } from 'react-router-dom'
+import Pageuparrow from '../Pageuparrow'
 
 // import Footer from '../../../../Footer'
 const  Cleaning = () => {
@@ -37,7 +38,7 @@ const  Cleaning = () => {
     </div>
   </div>
 </div>
-{/* <Footer/> */}
+<Pageuparrow/>
     </div>
   )
 }

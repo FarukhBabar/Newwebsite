@@ -2,6 +2,7 @@
 import React from 'react'
 // import Footer from '../../../Footer'
 import { Link } from 'react-router-dom'
+import Pageuparrow from '../Pageuparrow'
 // import "../../../Style.css"
 const Debathroom = () => {
   return (
@@ -47,6 +48,7 @@ const Debathroom = () => {
     </div>
   </div>
 </div>
+<Pageuparrow/>
 </div>
   )
 }

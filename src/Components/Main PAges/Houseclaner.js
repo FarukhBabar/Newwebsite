@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Pageuparrow from '../Pageuparrow'
 const Houseclaner = () => {
   return (
     <div>
@@ -100,6 +101,7 @@ const Houseclaner = () => {
     </div>
   </div>
 </div>
+<Pageuparrow/>
 </div>
   )
 }

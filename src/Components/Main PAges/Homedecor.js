@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Pageuparrow from '../Pageuparrow'
 
 const Homedecor = () => {
   return (
@@ -59,7 +60,7 @@ const Homedecor = () => {
   </div>
  
 </div>
-
+<Pageuparrow/>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 // import '../../../../Style.css'
 import { Link } from 'react-router-dom'
+import Pageuparrow from '../Pageuparrow'
 
 // import Footer from '../../../../Footer'
 const Kitechendde = () => {
@@ -110,7 +111,7 @@ const Kitechendde = () => {
 
   </div>
 </div>
-{/* <Footer/> */}
+<Pageuparrow/>
     </div>
   )
 }
