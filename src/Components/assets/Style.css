@@ -616,3 +616,9 @@
 .shop-now-btn:hover {
   background-color: #218838;
 }
+.dropdown-menu[data-bs-popper]{
+  margin-left: -50px !important;
+}
+.dropdown-menu[data-bs-popper]:hover{
+  margin-left: -50px !important;
+}

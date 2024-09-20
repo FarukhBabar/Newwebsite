@@ -597,19 +597,19 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
                 <button className="btn dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="bi bi-person fs-4"></i>
                 </button>
-                <ul className="dropdown-menu" aria-labelledby="profileDropdown">
-                  <li><a className="dropdown-item" href="#">Profile</a></li>
-                  <li><Link to="/Register" className="dropdown-item text-decoration-none  text-dark">REGISTER</Link></li>
+                <ul className="dropdown-menu  me-5" aria-labelledby="profileDropdown">
+                  <li className=''><a className="dropdown-item text-center" href="#">Profile</a></li>
+                  <li><Link to="/Register" className="dropdown-item text-decoration-none  text-dark text-center">REGISTER</Link></li>
                   
                   <li> 
       
       {userlogin?(
 
-<Link to=""  onClick={Logout} className="dropdown-item  text-decoration-none text-dark">LOGOUT</Link>
+<Link to=""  onClick={Logout} className="dropdown-item  text-decoration-none text-dark text-center">LOGOUT</Link>
 
 ):(
 
-<Link to="/login" className="dropdown-item text-decoration-none text-dark">LOGIN</Link>
+<Link to="/login" className="dropdown-item text-decoration-none text-dark text-center">LOGIN</Link>
 )
 }
     </li>
