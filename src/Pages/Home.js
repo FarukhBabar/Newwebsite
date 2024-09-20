@@ -116,6 +116,7 @@ import Carousel from '../Components/Carousel';
 import { Link } from 'react-router-dom';
 import { FaArrowUp } from 'react-icons/fa'; // Import Font Awesome for the arrow icon
 import Reviewsection from '../Components/Reviewsection';
+import Footer from './Footer';
 
 const Home = () => {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
@@ -338,6 +339,7 @@ const Home = () => {
             <li><u><a href="#" className="dropdown-item  ">Amtech Tools</a></u></li>
             <li><u><a href="#" className="dropdown-item  ">Antiquax</a></u></li>       
             </div> */}
+            <Footer/>
     </div>
   );
 };
