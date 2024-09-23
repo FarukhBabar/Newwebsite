@@ -488,7 +488,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             </div>
           </ol>
         </li>
-          {/* <li className="dropdown-item h5">
+          <li className="dropdown-item h5">
           <a
             href="#"
             className="dropdown-toggle"
@@ -537,7 +537,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             </div>
             </div>
           </ol>
-        </li> */}
+        </li>
       </ul>
     </div>
   </div>
