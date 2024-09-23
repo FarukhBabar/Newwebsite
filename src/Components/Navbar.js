@@ -538,6 +538,82 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             </div>
           </ol>
         </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >China Products</a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>China Product Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/china/crockery" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Crockery </Link></u></li>
+            <li><u><Link to="/category/china/cookware" className="dropdown-item  ps-5">Cookwar</Link></u></li>
+            <li><u><Link to="/category/china/dinner" className="dropdown-item  ps-5">Dinner Sets</Link></u></li>
+            <li><u><Link to="/category/china/drinkingglass" className="dropdown-item  ps-5">Drinking Glass </Link></u></li>
+            <li><u><Link to="/category/china" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/china products.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Hardware Products</a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Hardware Product Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/china/crockery" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Furnitur </Link></u></li>
+            <li><u><Link to="/category/china/cookware" className="dropdown-item  ps-5">Mats & Rugs</Link></u></li>
+           
+            <li><u><Link to="/category/china/drinkingglass" className="dropdown-item  ps-5">Metal Bucket Glass </Link></u></li>
+            <li><u><Link to="/category/hardware" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/hardware mats.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Seasonal Sports </a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Seasonal Sports Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/seasonalsports/cooler" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Cooler Bags </Link></u></li>
+            <li><u><Link to="/category/seasonalsports/flask" className="dropdown-item  ps-5">Flasks</Link></u></li>
+           
+            <li><u><Link to="/category/seasonalsports/hotwater" className="dropdown-item  ps-5">Hotwater Bottles </Link></u></li>
+            <li><u><Link to="/category/seasonalsports/picnic" className="dropdown-item  ps-5">Picnic </Link></u></li>
+            <li><u><Link to="/category/seasonalsports" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/sports.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
       </ul>
     </div>
   </div>

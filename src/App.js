@@ -331,6 +331,45 @@ import Velcro from './Components/Main PAges/Pet products/Velcro/Velcro'
 import Velcrosingl from './Components/Main PAges/Pet products/Velcro/Velcrosingl'
 import Werner from './Components/Main PAges/Pet products/Werner/Werner'
 import Wernersingl from './Components/Main PAges/Pet products/Werner/Wernersingl'
+import Chinamain from './Components/Main PAges/China/Chinamain'
+import Cookware from './Components/Main PAges/China/Cookware/Cookware'
+import Cookwaresingle from './Components/Main PAges/China/Cookware/Cookwaresingle'
+import Crockery from './Components/Main PAges/China/Crockery/Crockery'
+import Crockerysingle from './Components/Main PAges/China/Crockery/Crockerysingle'
+import Dinner from './Components/Main PAges/China/Dinnersets/Dinner'
+import Dinnersingel from './Components/Main PAges/China/Dinnersets/Dinnersingel'
+import DrinkingGlass from './Components/Main PAges/China/DrinkingGlass/DrinkingGlass'
+import DrinkingGlasssingel from './Components/Main PAges/China/DrinkingGlass/DrinkingGlasssingl'
+import GlassTablewear from './Components/Main PAges/China/GlassTablewear/GlassTablewear'
+import GlassTablewearsingel from './Components/Main PAges/China/GlassTablewear/GlassTablewearsingl'
+import HomeBaking from './Components/Main PAges/China/HomeBaking/HomeBaking'
+import HomeBakingsingel from './Components/Main PAges/China/HomeBaking/HomeBakingsingl'
+import Mugscups from './Components/Main PAges/China/Mugscups/Mugscups'
+import Mugscupssingel from './Components/Main PAges/China/Mugscups/Mugscupssingl'
+import Storageaccessories from './Components/Main PAges/China/Storageaccessories/Storageaccessories'
+import Storageaccessoriessingel from './Components/Main PAges/China/Storageaccessories/Storageaccessoriessingl'
+import Hardwaremain from './Components/Main PAges/Hadweare/Hardwaremain'
+import Furniture from './Components/Main PAges/Hadweare/Furniture/Furniture'
+import Furnituresingl from './Components/Main PAges/Hadweare/Furniture/Furnituresingl'
+import Mats from './Components/Main PAges/Hadweare/Mats & Rugs/Mats'
+import Matssingl from './Components/Main PAges/Hadweare/Mats & Rugs/Matssingl'
+import Metalbuck from './Components/Main PAges/Hadweare/Metalbuck/Metalbuck'
+import Metalbucksingel from './Components/Main PAges/Hadweare/Metalbuck/Metalbucksingl'
+import Seasonalsportsmain from './Components/Main PAges/SeasonalSPORTS/Seasonalsportsmain'
+import Coolerbags from './Components/Main PAges/SeasonalSPORTS/Coolerbags/Coolerbags'
+import Coolersingl from './Components/Main PAges/SeasonalSPORTS/Coolerbags/Coolersingl'
+import Flas from './Components/Main PAges/SeasonalSPORTS/Flask/Flas'
+import Flasksingl from './Components/Main PAges/SeasonalSPORTS/Flask/Flasksingl'
+import Hotwaterr from './Components/Main PAges/SeasonalSPORTS/Hotwater/Hotwaterr'
+import Hotwatersingel from './Components/Main PAges/SeasonalSPORTS/Hotwater/Hotwatersingl'
+import Picnicsingel from './Components/Main PAges/SeasonalSPORTS/Picnic/Picnicsingl'
+import Picnic from './Components/Main PAges/SeasonalSPORTS/Picnic/Picnic'
+import Sportsbottelsingel from './Components/Main PAges/SeasonalSPORTS/Sportsbottel/Sportsbottelsingl'
+import Sportsbottel from './Components/Main PAges/SeasonalSPORTS/Sportsbottel/Sportsbottel'
+import Towelssport from './Components/Main PAges/SeasonalSPORTS/Towelsaccessories/Towelssport'
+import Towelssportsingel from './Components/Main PAges/SeasonalSPORTS/Towelsaccessories/Towelssportsingl'
+import Umbrella from './Components/Main PAges/SeasonalSPORTS/Umbrella/Umbrella'
+import Umbrellasingel from './Components/Main PAges/SeasonalSPORTS/Umbrella/Umbrellasingl'
 const AdminLayout = ({ children }) => (
   
   <>
@@ -709,6 +748,48 @@ const App = () => {
             <Route path='/product/fishproduct/:id' element={<MainLayout><Velcrosingl/></MainLayout>}/>
              <Route path='/category/petproducts/pet' element={<MainLayout><Werner/></MainLayout>}/>
             <Route path='/product/pet/:id' element={<MainLayout><Wernersingl/></MainLayout>}/>
+
+             <Route path='/category/china' element={<MainLayout><Chinamain/></MainLayout>}/>
+             <Route path='/category/china/cookware' element={<MainLayout><Cookware/></MainLayout>}/>
+            <Route path='/product/cookware/:id' element={<MainLayout><Cookwaresingle/></MainLayout>}/>
+             <Route path='/category/china/crockery' element={<MainLayout><Crockery/></MainLayout>}/>
+            <Route path='/product/crockery/:id' element={<MainLayout><Crockerysingle/></MainLayout>}/>
+             <Route path='/category/china/dinner' element={<MainLayout><Dinner/></MainLayout>}/>
+            <Route path='/product/dinner/:id' element={<MainLayout><Dinnersingel/></MainLayout>}/>
+           <Route path='/category/china/drinkingglass' element={<MainLayout><DrinkingGlass/></MainLayout>}/>
+            <Route path='/product/drinkingglass/:id' element={<MainLayout><DrinkingGlasssingel/></MainLayout>}/>
+           <Route path='/category/china/glasstableware' element={<MainLayout><GlassTablewear/></MainLayout>}/>
+            <Route path='/product/glasstableware/:id' element={<MainLayout><GlassTablewearsingel/></MainLayout>}/>
+           <Route path='/category/china/homebaking' element={<MainLayout><HomeBaking/></MainLayout>}/>
+            <Route path='/product/homebaking/:id' element={<MainLayout><HomeBakingsingel/></MainLayout>}/>
+           <Route path='/category/china/mugscups' element={<MainLayout><Mugscups/></MainLayout>}/>
+            <Route path='/product/mugscups/:id' element={<MainLayout><Mugscupssingel/></MainLayout>}/>
+           <Route path='/category/china/storageaccessories' element={<MainLayout><Storageaccessories/></MainLayout>}/>
+            <Route path='/product/storageaccessories/:id' element={<MainLayout><Storageaccessoriessingel/></MainLayout>}/>
+
+            <Route path='/category/hardware' element={<MainLayout><Hardwaremain/></MainLayout>}/>
+            <Route path='/category/hardware/furniture' element={<MainLayout><Furniture/></MainLayout>}/>
+            <Route path='/product/furniture/:id' element={<MainLayout><Furnituresingl/></MainLayout>}/>
+            <Route path='/category/hardware/mats' element={<MainLayout><Mats/></MainLayout>}/>
+            <Route path='/product/mats/:id' element={<MainLayout><Matssingl/></MainLayout>}/>
+            <Route path='/category/hardware/metalbuck' element={<MainLayout><Metalbuck/></MainLayout>}/>
+            <Route path='/product/metalbuck/:id' element={<MainLayout><Metalbucksingel/></MainLayout>}/>
+
+            <Route path='/category/seasonalsports' element={<MainLayout><Seasonalsportsmain/></MainLayout>}/>
+           <Route path='/category/seasonalsports/cooler' element={<MainLayout><Coolerbags/></MainLayout>}/>
+            <Route path='/product/cooler/:id' element={<MainLayout><Coolersingl/></MainLayout>}/>
+           <Route path='/category/seasonalsports/flask' element={<MainLayout><Flas/></MainLayout>}/>
+            <Route path='/product/flask/:id' element={<MainLayout><Flasksingl/></MainLayout>}/>
+           <Route path='/category/seasonalsports/hotwater' element={<MainLayout><Hotwaterr/></MainLayout>}/>
+            <Route path='/product/hotwater/:id' element={<MainLayout><Hotwatersingel/></MainLayout>}/>
+           <Route path='/category/seasonalsports/picnic' element={<MainLayout><Picnic/></MainLayout>}/>
+            <Route path='/product/picnic/:id' element={<MainLayout><Picnicsingel/></MainLayout>}/>
+           <Route path='/category/seasonalsports/sportbootel' element={<MainLayout><Sportsbottel/></MainLayout>}/>
+            <Route path='/product/sportbootel/:id' element={<MainLayout><Sportsbottelsingel/></MainLayout>}/>
+           <Route path='/category/seasonalsports/towelssport' element={<MainLayout><Towelssport/></MainLayout>}/>
+            <Route path='/product/towelssport/:id' element={<MainLayout><Towelssportsingel/></MainLayout>}/>
+           <Route path='/category/seasonalsports/umbrella' element={<MainLayout><Umbrella/></MainLayout>}/>
+            <Route path='/product/umbrella/:id' element={<MainLayout><Umbrellasingel/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </div>

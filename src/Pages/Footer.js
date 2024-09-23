@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       {/* Footer */}
-      <footer className="text-center text-lg-start text-white" style={{ backgroundColor: '#1a1a1d' }}>
+      <footer className="text-center text-lg-start text-white mt-3" style={{ backgroundColor: '#1a1a1d' }}>
         {/* Grid container */}
         <div className="container pt-5 pb-4">
           {/* Section: Links */}
@@ -35,8 +35,8 @@ const Footer = () => {
                 <h6 className="text-uppercase font-weight-bold" style={{ color: '#f5f5f5' }}>Contact</h6>
                 <p><i className="fas fa-home mr-3" /> New York, NY 10012, US</p>
                 <p><i className="fas fa-envelope mr-3" /> info@example.com</p>
-                <a href='#'><i className="fas fa-phone mr-3" /> +1 234 567 88</a>
-                <a href='#'><i className="fas fa-print mr-3" /> +1 234 567 89</a>
+                <a href='tel:+1 234 567 88'><i className="fas fa-phone mr-3" /> +1 234 567 88</a> <br/>
+                <a href='tel:+1 234 567 88'><i className="fas fa-print mr-3" /> +1 234 567 89</a>
               </div>
 
               {/* Social Media Column */}
