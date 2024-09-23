@@ -16,7 +16,7 @@ const Umbrella = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/product/sportbootel" />
+          <CardNew key={user._id} user={user} baseUrl="/product/umbrella" />
         ))}
       </div>
     </div>
