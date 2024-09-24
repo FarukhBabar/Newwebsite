@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./assets/Style.css";
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
+import { useCart } from './CartContext'
 
 const Navbar = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [products, setProducts] = useState([]);
+  const [cartCount, setCartCount] = useState(0);
+  const { cartItems } = useCart();
     const userlogin = localStorage.getItem("user");
   const navigate = useNavigate();
 
@@ -14,6 +17,10 @@ const Navbar = () => {
     setSearchOpen(!searchOpen);
   };
 
+useEffect(() => {
+   
+  setCartCount(cartItems.length);
+}, [cartItems]);
   const handleSearch = async () => {
     try {
       const response = await axios.get('https://api.homeessentialshive.co.uk/api/products', {
@@ -614,6 +621,80 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             </div>
           </ol>
         </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Pest Control </a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Pest Control Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/pestcontrol/rentokil" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Rentokil Initial </Link></u></li>
+            <li><u><Link to="/category/pestcontrol/stv" className="dropdown-item  ps-5">STV International</Link></u></li>
+           
+            <li><u><Link to="/category/pestcontrol" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/pest control.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Kids Products </a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Kids Products Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/kidsproduct/kidsproducts" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Kids Product </Link></u></li>
+            <li><u><Link to="/category/kidsproduct/kidssto" className="dropdown-item  ps-5">Kids Storage</Link></u></li>
+           
+            <li><u><Link to="/category/kidsproduct" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/kids product.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Glassweare Products </a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Glassweare Products Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/glassweare/cakes" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Cakes Stand</Link></u></li>
+            <li><u><Link to="/category/glassweare/crokery" className="dropdown-item  ps-5">Crokery </Link></u></li>
+            <li><u><Link to="/category/glassweare/crystal" className="dropdown-item  ps-5">Crystal </Link></u></li>
+            <li><u><Link to="/category/glassweare/glassdecorative" className="dropdown-item  ps-5">Glass Decorative </Link></u></li>
+           
+            <li><u><Link to="/category/glassweare" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/glassware.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
       </ul>
     </div>
   </div>
@@ -629,7 +710,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
               <li>
                 <a className="nav-link active text-dark" href="#">Shop</a>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Collections
                 </a>
@@ -658,7 +739,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
                     <a className="dropdown-item" href="#">3 Piece</a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a className="nav-link" href="#">Contact</a>
               </li>
@@ -696,7 +777,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
               <i className="bi bi-search fs-4"></i>
             </div>
             <div className='me-3'>
-              <i className="bi bi-bag-fill fs-4"></i>
+             <Link to='/addtocart'><i className="bi bi-bag-fill fs-4"></i>({cartCount})</Link> 
             </div>
           </div>
         </div>

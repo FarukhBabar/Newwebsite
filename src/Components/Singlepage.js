@@ -30,13 +30,13 @@ const Singlepage = ({ data }) => {
       if (userData.role === 'user') {
         addToCart({ ...product, qty });
         setQty(1);
-        navigate('/addtocart');
+        // navigate('/addtocart');
       } else {
         alert("Invalid user role");
       }
     } else {
       alert("You need to login first");
-      navigate('/log');
+      navigate('/login');
     }
   };
 
@@ -51,7 +51,7 @@ const Singlepage = ({ data }) => {
       }
     } else {
       alert("You need to login first");
-      navigate('/log');
+      navigate('/login');
     }
   };
 
@@ -71,14 +71,14 @@ const Singlepage = ({ data }) => {
           </div>
           <div className="product-details">
             <h1 className="product-title">{product.name}</h1>
-            <p className="product-price">${product.price}</p>
+            <p className="product-price">£{product.price}</p>
             <div className="quantity-selector">
               <h5>Quantity:</h5>
-              <button onClick={decQty} className="qty-btn">-</button>
+              <button onClick={decQty} className="qty-btn decrement">-</button>
               <span className="qty-value">{qty}</span>
-              <button onClick={incQty} className="qty-btn">+</button>
+              <button onClick={incQty} className="qty-btn decrement">+</button>
             </div>
-            <p className="total-price">Total Amount: ${product.price * qty}</p>
+            <p className="total-price">Total Amount:<b> £{product.price * qty} </b></p>
             <div className="action-buttons">
               <button className="add-to-cart-btn" onClick={handleAddToCart}>
                 Add To Cart

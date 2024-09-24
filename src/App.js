@@ -370,6 +370,40 @@ import Towelssport from './Components/Main PAges/SeasonalSPORTS/Towelsaccessorie
 import Towelssportsingel from './Components/Main PAges/SeasonalSPORTS/Towelsaccessories/Towelssportsingl'
 import Umbrella from './Components/Main PAges/SeasonalSPORTS/Umbrella/Umbrella'
 import Umbrellasingel from './Components/Main PAges/SeasonalSPORTS/Umbrella/Umbrellasingl'
+import Addcart from './Pages/Addcart'
+import Pestcontromain from './Components/Main PAges/Pestcontrol/Pestcontromain'
+import Rentokil from './Components/Main PAges/Pestcontrol/Rentokil/Rentokil'
+import RentokilSingle from './Components/Main PAges/Pestcontrol/Rentokil/RentokilSingle'
+import StvSingle from './Components/Main PAges/Pestcontrol/STVinternational/Stvsingle'
+import Stv from './Components/Main PAges/Pestcontrol/STVinternational/Stv'
+import Kidsmain from './Components/Main PAges/Kidsproducts/Kidsmain'
+import Baby from './Components/Main PAges/Kidsproducts/Babyproducts/Baby'
+import Babysingle from './Components/Main PAges/Kidsproducts/Babyproducts/Babysingle'
+import Kidschar from './Components/Main PAges/Kidsproducts/Kidscha/Kidschar'
+import Kidschasingl from './Components/Main PAges/Kidsproducts/Kidscha/Kidschasingl'
+import Kidssto from './Components/Main PAges/Kidsproducts/KidsStorage/Kidssto'
+import Kidsstosingl from './Components/Main PAges/Kidsproducts/KidsStorage/Kidsstosingl'
+import Glasswaremain from './Components/Main PAges/Glassware/Glasswaremain'
+import Cakes from './Components/Main PAges/Glassware/Cakesstand/Cakes'
+import Cakessing from './Components/Main PAges/Glassware/Cakesstand/Cakessing'
+import Crokery from './Components/Main PAges/Glassware/Crokery/Crokery'
+import Crokerysingl from './Components/Main PAges/Glassware/Crokery/Crokerysingl'
+import Crystal from './Components/Main PAges/Glassware/Crystal/Crystal'
+import Crystalsingl from './Components/Main PAges/Glassware/Crystal/Crystalsingl'
+import GlassDecorative from './Components/Main PAges/Glassware/GlassDecorative/GlassDecorative'
+import GlassDecorativesingl from './Components/Main PAges/Glassware/GlassDecorative/GlassDecorativesingl'
+import GlassStorage from './Components/Main PAges/Glassware/GlassStorage/GlassStorage'
+import GlassStoragesingl from './Components/Main PAges/Glassware/GlassStorage/GlassStoragesingl'
+import Glasstableware from './Components/Main PAges/Glassware/Glasstableware/Glasstableware'
+import Glasstablewaresingl from './Components/Main PAges/Glassware/Glasstableware/Glasstablewaresingl'
+import GlassTumbler from './Components/Main PAges/Glassware/GlassTumbler/GlassTumbler'
+import GlassTumblersingl from './Components/Main PAges/Glassware/GlassTumbler/GlassTumblersingl'
+import Glassvass from './Components/Main PAges/Glassware/Glassvass/Glassvass'
+import Glassvasssingl from './Components/Main PAges/Glassware/Glassvass/Glassvasssingl'
+import Kliner from './Components/Main PAges/Glassware/Kliner/Kliner'
+import Klinersingl from './Components/Main PAges/Glassware/Kliner/Klinersingl'
+import Pyrex from './Components/Main PAges/Glassware/Pyrex/Pyrex'
+import Pyrexsingl from './Components/Main PAges/Glassware/Pyrex/Pyrexsingl'
 const AdminLayout = ({ children }) => (
   
   <>
@@ -431,6 +465,7 @@ const App = () => {
         {/* ---Main Routes----- */}
         <Route path='/forget' element={<Forgetpassword/>}  />
         <Route path='/verifyotp' element={<VerifyOtp/>}/>
+        
           <Route path='/' element={<MainLayout><Home/></MainLayout>}/>
           <Route path='/login' element={<MainLayout><LoginForm/></MainLayout>}/>
            <Route path='/category/poundline' element={<MainLayout><Poundline/></MainLayout>}/>
@@ -756,8 +791,6 @@ const App = () => {
             <Route path='/product/crockery/:id' element={<MainLayout><Crockerysingle/></MainLayout>}/>
              <Route path='/category/china/dinner' element={<MainLayout><Dinner/></MainLayout>}/>
             <Route path='/product/dinner/:id' element={<MainLayout><Dinnersingel/></MainLayout>}/>
-           <Route path='/category/china/drinkingglass' element={<MainLayout><DrinkingGlass/></MainLayout>}/>
-            <Route path='/product/drinkingglass/:id' element={<MainLayout><DrinkingGlasssingel/></MainLayout>}/>
            <Route path='/category/china/glasstableware' element={<MainLayout><GlassTablewear/></MainLayout>}/>
             <Route path='/product/glasstableware/:id' element={<MainLayout><GlassTablewearsingel/></MainLayout>}/>
            <Route path='/category/china/homebaking' element={<MainLayout><HomeBaking/></MainLayout>}/>
@@ -790,6 +823,45 @@ const App = () => {
             <Route path='/product/towelssport/:id' element={<MainLayout><Towelssportsingel/></MainLayout>}/>
            <Route path='/category/seasonalsports/umbrella' element={<MainLayout><Umbrella/></MainLayout>}/>
             <Route path='/product/umbrella/:id' element={<MainLayout><Umbrellasingel/></MainLayout>}/>
+            <Route path='/addtocart' element={<MainLayout><Addcart/></MainLayout>}/>
+
+           <Route path='/category/pestcontrol' element={<MainLayout><Pestcontromain/></MainLayout>}/>
+           <Route path='/category/pestcontrol/rentokil' element={<MainLayout><Rentokil/></MainLayout>}/>
+            <Route path='/product/rentokil/:id' element={<MainLayout><RentokilSingle/></MainLayout>}/>
+           <Route path='/category/pestcontrol/stv' element={<MainLayout><Stv/></MainLayout>}/>
+            <Route path='/product/stv/:id' element={<MainLayout><StvSingle/></MainLayout>}/>
+
+             <Route path='/category/kidsproduct' element={<MainLayout><Kidsmain/></MainLayout>}/>
+              <Route path='/category/kidsproduct/kidsproducts' element={<MainLayout><Baby/></MainLayout>}/>
+            <Route path='/product/babyproducts/:id' element={<MainLayout><Babysingle/></MainLayout>}/>
+              <Route path='/category/kidsproduct/character' element={<MainLayout><Kidschar/></MainLayout>}/>
+            <Route path='/product/character/:id' element={<MainLayout><Kidschasingl/></MainLayout>}/>
+              <Route path='/category/kidsproduct/kidssto' element={<MainLayout><Kidssto/></MainLayout>}/>
+            <Route path='/product/kidssto/:id' element={<MainLayout><Kidsstosingl/></MainLayout>}/>
+            
+             <Route path='/category/glassweare' element={<MainLayout><Glasswaremain/></MainLayout>}/>
+              <Route path='/category/glassweare/cakes' element={<MainLayout><Cakes/></MainLayout>}/>
+            <Route path='/product/cakes/:id' element={<MainLayout><Cakessing/></MainLayout>}/>
+              <Route path='/category/glassweare/crokery' element={<MainLayout><Crokery/></MainLayout>}/>
+            <Route path='/product/crokery/:id' element={<MainLayout><Crokerysingl/></MainLayout>}/>
+              <Route path='/category/glassweare/crystal' element={<MainLayout><Crystal/></MainLayout>}/>
+            <Route path='/product/crystal/:id' element={<MainLayout><Crystalsingl/></MainLayout>}/>
+              <Route path='/category/glassweare/glassdecorative' element={<MainLayout><GlassDecorative/></MainLayout>}/>
+            <Route path='/product/glassdecorative/:id' element={<MainLayout><GlassDecorativesingl/></MainLayout>}/>
+              <Route path='/category/glassweare/glassstorage' element={<MainLayout><GlassStorage/></MainLayout>}/>
+            <Route path='/product/glassstorage/:id' element={<MainLayout><GlassStoragesingl/></MainLayout>}/>
+              <Route path='/category/glassweare/glasstableware' element={<MainLayout><Glasstableware/></MainLayout>}/>
+            <Route path='/product/glasstableware/:id' element={<MainLayout><Glasstablewaresingl/></MainLayout>}/>
+              <Route path='/category/glassweare/glasstumbler' element={<MainLayout><GlassTumbler/></MainLayout>}/>
+            <Route path='/product/glasstumbler/:id' element={<MainLayout><GlassTumblersingl/></MainLayout>}/>
+              <Route path='/category/glassweare/glassvass' element={<MainLayout><Glassvass/></MainLayout>}/>
+            <Route path='/product/glassvass/:id' element={<MainLayout><Glassvasssingl/></MainLayout>}/>
+              <Route path='/category/glassweare/kliner' element={<MainLayout><Kliner/></MainLayout>}/>
+            <Route path='/product/kliner/:id' element={<MainLayout><Klinersingl/></MainLayout>}/>
+              <Route path='/category/glassweare/pyrex' element={<MainLayout><Pyrex/></MainLayout>}/>
+            <Route path='/product/pyrex/:id' element={<MainLayout><Pyrexsingl/></MainLayout>}/>
+              <Route path='/category/glassweare/drinkingglass' element={<MainLayout><DrinkingGlass/></MainLayout>}/>
+            <Route path='/product/drinkingglass/:id' element={<MainLayout><DrinkingGlasssingel/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </div>

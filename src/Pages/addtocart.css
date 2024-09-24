@@ -1,0 +1,70 @@
+Addtocart.css
+.cart-page {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-page h2 {
+  font-weight: 700;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-card:hover {
+  transform: scale(1.05);
+}
+
+.price-text {
+  font-size: 18px;
+  color: #555;
+}
+
+.cart-summary {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-lg {
+  padding: 10px 30px;
+  font-size: 18px;
+}
+
+.btn-outline-dark {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .cart-summary {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-summary h3 {
+    margin-bottom: 15px;
+  }
+
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

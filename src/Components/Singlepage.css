@@ -152,3 +152,7 @@
   color: #555;
   line-height: 1.6;
 }
+.decrement{
+  border-radius: 15px;
+  margin-left: 15px;
+}
