@@ -113,8 +113,8 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><u><Link to="/food" className="dropdown-item mt-2 ps-5">Food</Link></u></li>
             <li><u><Link to="/drink" className="dropdown-item ps-5 pt-2">Drink</Link></u></li>
             </div>
-           <div className='text-center'>
-            <img src='/Images/sidebanner/bathroom.jpg' className='w-50 h-100 ms-5  mt-4 poundsideimages poundsideimage' />
+           <div className='text-center foodimge'>
+            <img src='/Images/sidebanner/bathroom.jpg' className='w-50 h-100 ms-5 foodimge  mt-4 poundsideimages poundsideimage' />
             </div>
             </div>
           </ul>
@@ -137,7 +137,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             <li><u><Link to="/smoking" className="dropdown-item ps-5">Smoking Essential</Link></u></li>
             </div>
             <div className='text-center'>
-            <img src='/Images/sidebanner/smoking product.jpg' className='w-75 h-100 ms-5  mt-4 poundsideimages poundsideimage' />
+            <img src='/Images/sidebanner/smoking product.jpg' className='w-75 h-100 ms-5  mt-4 smokingimage poundsideimages poundsideimage' />
             </div>
             </div>
           </ol>

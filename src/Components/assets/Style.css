@@ -484,6 +484,15 @@
 }
 /* Offcanvas adjustments for mobile screens */
 @media (max-width: 768px) {
+  .foodimge{
+    margin-left: 80px !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+  .smokingimage{
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
   .offcanvas-body {
     display: flex;
     flex-direction: column;
