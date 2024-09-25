@@ -1,4 +1,4 @@
-Addtocart.css
+/* Addtocart.css
 .cart-page {
   background-color: #f9f9f9;
   padding: 20px;
@@ -67,4 +67,105 @@ Addtocart.css
     width: 100%;
     margin-bottom: 15px;
   }
+} */
+
+/* addtocart.css */
+.container.cart-page {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cart-table {
+  width: 100%;
+  text-align: left;
+}
+
+.cart-table th {
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.cart-table td {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+/* .product-image {
+  width: auto;
+  height: auto;
+  margin-right: 20px;
+} */
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* .product-size {
+  font-size: 14px;
+  color: #888;
+} */
+
+.product-actions {
+  margin-top: 10px;
+}
+
+.product-actions .btn-edit, .product-actions .btn-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-actions .btn-edit i, .product-actions .btn-delete i {
+  font-size: 18px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls .btn-quantity {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.summary-details h3 {
+  font-size: 18px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #444;
 }

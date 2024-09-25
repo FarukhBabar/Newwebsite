@@ -695,6 +695,58 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
             </div>
           </ol>
         </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Electrical Products</a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Electrical Products Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/electricalde/cameras" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Dummy Cameras</Link></u></li>
+            <li><u><Link to="/category/electricalde/dorbells" className="dropdown-item  ps-5">DoorBells </Link></u></li>
+            <li><u><Link to="/category/electricalde/earephone" className="dropdown-item  ps-5">Earphone </Link></u></li>
+            <li><u><Link to="/category/electricalde/hairbody" className="dropdown-item  ps-5">Hair/Body</Link></u></li>
+           
+            <li><u><Link to="/category/electricalde" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/electrical.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
+        <li className="dropdown-item h5">
+          <a
+            href="#"
+            className="dropdown-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#poundlineSubmenu"
+            aria-expanded="false"
+            >Partyware Products</a>
+          <ol className="collapse submenu-right canvas" id="poundlineSubmenu">
+            <div><h4 className='text-center text-danger mt-3'>Partyware Products Catagories</h4>
+            <hr/></div>
+            <div className='d-flex ps-5 list-unstyled listsett'>
+            <div className=''>
+            <li><u><Link to="/category/partyware/baloon" className="dropdown-item mt-2 ps-5 fs-5 fw-2">Ballon Weights</Link></u></li>
+            <li><u><Link to="/category/partyware/pumps" className="dropdown-item  ps-5">Baloon Pumps </Link></u></li>
+            <li><u><Link to="/category/partyware/banner" className="dropdown-item  ps-5">Birthday Banner </Link></u></li>
+            <li><u><Link to="/category/partyware/birthdaybadge" className="dropdown-item  ps-5">Birthday Badge</Link></u></li>
+           
+            <li><u><Link to="/category/partyware" className="dropdown-item  ps-5">View All</Link></u></li>
+            </div>
+            <div>
+            <img src='/Images/sidebanner/party ware.jpg' className='w-75 h-75 ms-5 mt-4 poundsideimages poundsideimage' />
+            </div>
+            </div>
+          </ol>
+        </li>
       </ul>
     </div>
   </div>

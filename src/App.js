@@ -404,6 +404,52 @@ import Kliner from './Components/Main PAges/Glassware/Kliner/Kliner'
 import Klinersingl from './Components/Main PAges/Glassware/Kliner/Klinersingl'
 import Pyrex from './Components/Main PAges/Glassware/Pyrex/Pyrex'
 import Pyrexsingl from './Components/Main PAges/Glassware/Pyrex/Pyrexsingl'
+import Electricaldemain from './Components/Main PAges/Electrical/Electricaldemain'
+import Cameras from './Components/Main PAges/Electrical/Cameras/Cameras'
+import Camerasingle from './Components/Main PAges/Electrical/Cameras/Camerasingle'
+import Clock from './Components/Main PAges/Electrical/Clock/Clock'
+import Clocksingle from './Components/Main PAges/Electrical/Clock/Clocksingle'
+import Digital from './Components/Main PAges/Electrical/Digitalaccessories/Digital'
+import Digitalsingle from './Components/Main PAges/Electrical/Digitalaccessories/Digitalsingle'
+import Dorbells from './Components/Main PAges/Electrical/Dorbells/Dorbells'
+import Dorbellssingle from './Components/Main PAges/Electrical/Dorbells/Dorbellssingl'
+import Earphone from './Components/Main PAges/Electrical/Earphone/Earphone'
+import Earphonesingle from './Components/Main PAges/Electrical/Earphone/Earphonesingl'
+import ElectricalAccess from './Components/Main PAges/Electrical/ElectricalAccess/ElectricalAccess'
+import ElectricalAccesssingle from './Components/Main PAges/Electrical/ElectricalAccess/ElectricalAccesssingl'
+import Hairbody from './Components/Main PAges/Electrical/Hairbody/Hairbody'
+import Hairbodysingle from './Components/Main PAges/Electrical/Hairbody/Hairbodysingl'
+import Ironele from './Components/Main PAges/Electrical/Ironele/Ironele'
+import Ironelesingle from './Components/Main PAges/Electrical/Ironele/Ironelesingl'
+import Partywaremain from './Components/Main PAges/Partyware/Partywaremain'
+import Badge from './Components/Main PAges/Partyware/Badge/Badge'
+import Badgesigle from './Components/Main PAges/Partyware/Badge/Badgesingl'
+import Pumps from './Components/Main PAges/Partyware/Baloonpumps/Pumps'
+import Pumpssingl from './Components/Main PAges/Partyware/Baloonpumps/Pumpssingl'
+import Baloon from './Components/Main PAges/Partyware/Baloons/Baloon'
+import Baloonsingl from './Components/Main PAges/Partyware/Baloons/Baloonsingl'
+import Banner from './Components/Main PAges/Partyware/Banner/Banner'
+import Bannersingl from './Components/Main PAges/Partyware/Banner/Bannersingl'
+import Bowsribbon from './Components/Main PAges/Partyware/Bowsribbon/Bowsribbon'
+import Bowsribbonsingl from './Components/Main PAges/Partyware/Bowsribbon/Bowsribbonsingl'
+import Candles from './Components/Main PAges/Partyware/Candles/Candles'
+import Candlessingl from './Components/Main PAges/Partyware/Candles/Candlessingl'
+import Cellowrap from './Components/Main PAges/Partyware/Cellowrap/Cellowrap'
+import Cellowrapsingl from './Components/Main PAges/Partyware/Cellowrap/Cellowrapsingl'
+import Fancydress from './Components/Main PAges/Partyware/Fancydress/Fancydress'
+import Fancydresssingl from './Components/Main PAges/Partyware/Fancydress/Fancydresssingl'
+import Giftbags from './Components/Main PAges/Partyware/Giftbags/Giftbags'
+import Giftbagssingl from './Components/Main PAges/Partyware/Giftbags/Giftbagssingl'
+import Partyaccessoriessingl from './Components/Main PAges/Partyware/Partyaccessories/Partyaccessoriessingl'
+import Partyaccessories from './Components/Main PAges/Partyware/Partyaccessories/Partyaccessories'
+import Partypopper from './Components/Main PAges/Partyware/Partypopper/Partypopper'
+import Partypoppersingl from './Components/Main PAges/Partyware/Partypopper/Partypoppersingl'
+import Pcards from './Components/Main PAges/Partyware/Pcards/Pcards'
+import Pcardssingl from './Components/Main PAges/Partyware/Pcards/Pcardssingl'
+import Tissuepaper from './Components/Main PAges/Partyware/Tissuepaper/Tissuepaper'
+import Tissuepapersingl from './Components/Main PAges/Partyware/Tissuepaper/Tissuepapersingl'
+import Weedingsingl from './Components/Main PAges/Partyware/Weeding/Weedingsingl'
+import Weding from './Components/Main PAges/Partyware/Weeding/Weeding'
 const AdminLayout = ({ children }) => (
   
   <>
@@ -862,6 +908,54 @@ const App = () => {
             <Route path='/product/pyrex/:id' element={<MainLayout><Pyrexsingl/></MainLayout>}/>
               <Route path='/category/glassweare/drinkingglass' element={<MainLayout><DrinkingGlass/></MainLayout>}/>
             <Route path='/product/drinkingglass/:id' element={<MainLayout><DrinkingGlasssingel/></MainLayout>}/>
+
+          <Route path='/category/electricalde' element={<MainLayout><Electricaldemain/></MainLayout>}/>
+       <Route path='/category/electricalde/cameras' element={<MainLayout><Cameras/></MainLayout>}/>
+            <Route path='/product/cameras/:id' element={<MainLayout><Camerasingle/></MainLayout>}/>
+       <Route path='/category/electricalde/clock' element={<MainLayout><Clock/></MainLayout>}/>
+            <Route path='/product/clock/:id' element={<MainLayout><Clocksingle/></MainLayout>}/>
+       <Route path='/category/electricalde/digital' element={<MainLayout><Digital/></MainLayout>}/>
+            <Route path='/product/digital/:id' element={<MainLayout><Digitalsingle/></MainLayout>}/>
+       <Route path='/category/electricalde/dorbells' element={<MainLayout><Dorbells/></MainLayout>}/>
+            <Route path='/product/dorbells/:id' element={<MainLayout><Dorbellssingle/></MainLayout>}/>
+       <Route path='/category/electricalde/earephone' element={<MainLayout><Earphone/></MainLayout>}/>
+            <Route path='/product/earephone/:id' element={<MainLayout><Earphonesingle/></MainLayout>}/>
+     <Route path='/category/electricalde/electricalaccesso' element={<MainLayout><ElectricalAccess/></MainLayout>}/>
+     <Route path='/product/electricalaccesso/:id' element={<MainLayout><ElectricalAccesssingle/></MainLayout>}/>
+     <Route path='/category/electricalde/hairbody' element={<MainLayout><Hairbody/></MainLayout>}/>
+     <Route path='/product/hairbody/:id' element={<MainLayout><Hairbodysingle/></MainLayout>}/>
+     <Route path='/category/electricalde/ironele' element={<MainLayout><Ironele/></MainLayout>}/>
+     <Route path='/product/ironele/:id' element={<MainLayout><Ironelesingle/></MainLayout>}/>
+
+       <Route path='/category/partyware' element={<MainLayout><Partywaremain/></MainLayout>}/>
+        <Route path='/category/partyware/birthdaybadge' element={<MainLayout><Badge/></MainLayout>}/>
+     <Route path='/product/birthdaybadge/:id' element={<MainLayout><Badgesigle/></MainLayout>}/>
+        <Route path='/category/partyware/pumps' element={<MainLayout><Pumps/></MainLayout>}/>
+     <Route path='/product/pumps/:id' element={<MainLayout><Pumpssingl/></MainLayout>}/>
+        <Route path='/category/partyware/baloon' element={<MainLayout><Baloon/></MainLayout>}/>
+     <Route path='/product/baloon/:id' element={<MainLayout><Baloonsingl/></MainLayout>}/>
+        <Route path='/category/partyware/banner' element={<MainLayout><Banner/></MainLayout>}/>
+     <Route path='/product/banner/:id' element={<MainLayout><Bannersingl/></MainLayout>}/>
+        <Route path='/category/partyware/bowsribbon' element={<MainLayout><Bowsribbon/></MainLayout>}/>
+     <Route path='/product/bowsribbon/:id' element={<MainLayout><Bowsribbonsingl/></MainLayout>}/>
+        <Route path='/category/partyware/candeles' element={<MainLayout><Candles/></MainLayout>}/>
+     <Route path='/product/candeles/:id' element={<MainLayout><Candlessingl/></MainLayout>}/>
+        <Route path='/category/partyware/cellowrap' element={<MainLayout><Cellowrap/></MainLayout>}/>
+     <Route path='/product/cellowrap/:id' element={<MainLayout><Cellowrapsingl/></MainLayout>}/>
+        <Route path='/category/partyware/fancydress' element={<MainLayout><Fancydress/></MainLayout>}/>
+     <Route path='/product/fancydress/:id' element={<MainLayout><Fancydresssingl/></MainLayout>}/>
+        <Route path='/category/partyware/giftbags' element={<MainLayout><Giftbags/></MainLayout>}/>
+     <Route path='/product/giftbags/:id' element={<MainLayout><Giftbagssingl/></MainLayout>}/>
+        <Route path='/category/partyware/partyaccessories' element={<MainLayout><Partyaccessories/></MainLayout>}/>
+     <Route path='/product/partyaccessories/:id' element={<MainLayout><Partyaccessoriessingl/></MainLayout>}/>
+        <Route path='/category/partyware/partypoppers' element={<MainLayout><Partypopper/></MainLayout>}/>
+     <Route path='/product/partypoppers/:id' element={<MainLayout><Partypoppersingl/></MainLayout>}/>
+        <Route path='/category/partyware/partycards' element={<MainLayout><Pcards/></MainLayout>}/>
+     <Route path='/product/partycards/:id' element={<MainLayout><Pcardssingl/></MainLayout>}/>
+        <Route path='/category/partyware/tissuepaper' element={<MainLayout><Tissuepaper/></MainLayout>}/>
+     <Route path='/product/tissuepaper/:id' element={<MainLayout><Tissuepapersingl/></MainLayout>}/>
+        <Route path='/category/partyware/weding' element={<MainLayout><Weding/></MainLayout>}/>
+     <Route path='/product/weding/:id' element={<MainLayout><Weedingsingl/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </div>
