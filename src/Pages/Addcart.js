@@ -52,7 +52,7 @@ const Addcart = () => {
             <th>Price</th>
             <th>Quantity</th>
             <th>Total</th>
-            <th>Action</th>
+            {/* <th>Action</th> */}
           </tr>
         </thead>
         <tbody>
@@ -74,15 +74,15 @@ const Addcart = () => {
                   </div>
                 </div>
               </td>
-              <td>Rs.{item.price}</td>
+              <td>£.{item.price}</td>
               <td>
                 <div className="quantity-controls">
-                  <button onClick={() => decQty(item.id)} className="btn-quantity">-</button>
+                  <button onClick={() => decQty(item.id)} className="btn-quantity qtybut">-</button>
                   <span>{quantities[item.id] || item.qty}</span>
-                  <button onClick={() => incQty(item.id)} className="btn-quantity">+</button>
+                  <button onClick={() => incQty(item.id)} className="btn-quantity qtybut">+</button>
                 </div>
               </td>
-              <td>Rs.{((quantities[item.id] || item.qty) * item.price).toFixed(2)}</td>
+              <td>£.{((quantities[item.id] || item.qty) * item.price).toFixed(2)}</td>
              
             </tr>
           ))}
@@ -91,7 +91,7 @@ const Addcart = () => {
 
       <div className="cart-summary mt-5">
         <div className="summary-details">
-          <h3>Subtotal: Rs.{totalAmount.toFixed(2)}</h3>
+          <h3>Subtotal: £.{totalAmount.toFixed(2)}</h3>
         </div>
         <button className="btn btn-primary btn-lg" onClick={handleCheckout}>Checkout</button>
         <button className="btn btn-danger btn-lg" onClick={handleClearCart}>Clear Cart</button>

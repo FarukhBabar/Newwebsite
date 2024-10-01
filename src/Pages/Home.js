@@ -1,116 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import Carousel from '../Components/Carousel';
-// import { Link } from 'react-router-dom';
-
-// const Home = () => {
-//   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
-
-//   // Function to handle scroll to the top of the page
-//   const scrollToTop = () => {
-//     window.scrollTo({ top: 0, behavior: 'smooth' });
-//   };
-
-//   useEffect(() => {
-//     // Event listener to show/hide scroll button
-//     const handleScroll = () => {
-//       if (window.pageYOffset > 300) {
-//         setShowScrollTopButton(true);
-//       } else {
-//         setShowScrollTopButton(false);
-//       }
-//     };
-
-//     window.addEventListener('scroll', handleScroll);
-
-//     // Cleanup event listener on component unmount
-//     return () => window.removeEventListener('scroll', handleScroll);
-//   }, []);
-//   return (
-//     <div>
-//         <Carousel/>
-//       <div className='container'>
-//   <div className='row'>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/4iX61f1918df44b09.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/W7Bdf61918df50475.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/hsa2451918df8801f.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/pt77a01918df9b1f8.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/faGf1f1918df76712.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/WNj8831918dfa53b0.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//   </div>
-//   <div className='row'>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/4iX61f1918df44b09.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/W7Bdf61918df50475.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/hsa2451918df8801f.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/pt77a01918df9b1f8.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/faGf1f1918df76712.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//     <div className='col-lg-2 col-md-2 col-6 text-center'>
-//       <img src='https://img-us.aosomcdn.com/440/100_cms/2024/08/26/WNj8831918dfa53b0.png' alt='Greenhouse' className='homeimg' />
-//       <Link to=''>Green House</Link>
-//     </div>
-//   </div>
-// </div>
-//    {showScrollTopButton && (
-//         <button
-//           onClick={scrollToTop}
-//           className='scroll-top-button'
-//           style={{
-//             position: 'fixed',
-//             bottom: '20px',
-//             right: '20px',
-//             backgroundColor: '#007bff',
-//             color: '#fff',
-//             border: 'none',
-//             borderRadius: '50%',
-//             padding: '20px',
-//             cursor: 'pointer',
-//             zIndex: '1000',
-//           }}
-//         >
-//           ↑
-//         </button>
-//       )}
-   
-
-
-//     </div>
-//   )
-// }
-
-// export default Home
-
 import React, { useState, useEffect } from 'react';
 import Carousel from '../Components/Carousel';
 import { Link } from 'react-router-dom';
@@ -201,12 +88,12 @@ const Home = () => {
         <div className='row '>
             
             <div className='col-lg-4 col-md-4 col-6'>
-                <img src='https://img-us.aosomcdn.com/thumbnail/485/n0/100_club/2024/08/19/su1b1c1916958dd8b.jpg.webp' className='w-100 shopbyimage'  alt=''/>
+            <Link to='/category/batteries'><img src='/Images/Main phone and batteries/1.png' className='w-100 shopbyimage '  alt=''/></Link>    
             </div>
              <div className='col-lg-4 col-md-4 col-6'>
-                <img src='https://img-us.aosomcdn.com/thumbnail/485/n0/100_club/2024/08/19/2j6b1c191694bd7a7.jpg.webp'  className='w-100 shopbyimage' alt=''/>
+      <Link to='/category/phoneaccessories'><img src='/Images/Main phone and batteries/Untitled-1.png'  className='w-100 shopbyimage' alt=''/></Link> 
             </div>
-             <div className='col-lg-4 col-md-4 col-6'>
+             <div className='col-lg-4 col-md-4 col-6 col-sm-8  mt-sm-5'>
                 <img src='https://img-us.aosomcdn.com/thumbnail/485/n0/100_club/2024/08/19/tAqb1c191694d8947.jpg.webp'  className='w-100 shopbyimage' alt=''/>
             </div>
         </div>
@@ -266,6 +153,7 @@ const Home = () => {
           <FaArrowUp size={20} />
         </button>
       )}
+      {/* <img src='/Images/Main phone and batteries/1.png' alt=''/> */}
         {/* <div>
               <hr
               style={{

@@ -225,8 +225,17 @@
 }
 .shopbyimage{
     border-radius: 25px;
+     background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
 }
-
+.shopbyimage:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
 .product-card {
   background-color: #fff;
@@ -592,7 +601,7 @@
   transform: scale(1.05);
 }
 
-.product-info {
+.product-inf {
   padding: 16px;
   text-align: center;
 }
@@ -630,4 +639,7 @@
 }
 .dropdown-menu[data-bs-popper]:hover{
   margin-left: -50px !important;
+}
+.qtybut{
+  border-radius: 10px;
 }

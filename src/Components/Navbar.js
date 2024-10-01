@@ -762,36 +762,7 @@ document.querySelectorAll('.mega-menu-trigger').forEach(item => {
               <li>
                 <a className="nav-link active text-dark" href="#">Shop</a>
               </li>
-              {/* <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Collections
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="collectionsDropdown">
-                  <li>
-                    <h4 className='dropdown-header'>Pret</h4>
-                    <hr />
-                    <a className="dropdown-item" href="#">Printed</a>
-                    <a className="dropdown-item" href="#">Embroidered</a>
-                    <a className="dropdown-item" href="#">Solids</a>
-                    <a className="dropdown-item" href="#">Anyday</a>
-                    <a className="dropdown-item" href="#">1 Piece</a>
-                    <a className="dropdown-item" href="#">2 Piece</a>
-                    <a className="dropdown-item" href="#">3 Piece</a>
-                    <a className="dropdown-item" href="#">Slips</a>
-                    <a className="dropdown-item" href="#">Bottoms</a>
-                  </li>
-                  <li>
-                    <h4 className='dropdown-header'>Cosmetics</h4>
-                    <hr />
-                    <a className="dropdown-item" href="#">Eid 2 Any Day</a>
-                    <a className="dropdown-item" href="#">Printed</a>
-                    <a className="dropdown-item" href="#">Embroidered</a>
-                    <a className="dropdown-item" href="#">Anyday</a>
-                    <a className="dropdown-item" href="#">2 Piece</a>
-                    <a className="dropdown-item" href="#">3 Piece</a>
-                  </li>
-                </ul>
-              </li> */}
+             
               <li className="nav-item">
                 <a className="nav-link" href="#">Contact</a>
               </li>

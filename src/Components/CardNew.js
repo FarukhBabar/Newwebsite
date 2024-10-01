@@ -23,7 +23,7 @@ const CardNew = ({ user, baseUrl }) => {
           />
         )}
       </div>
-      <div className="product-info">
+      <div className="product-inf">
         <h5 className="product-name">{user.name.slice(0, 25)}</h5>
         <p
           className="product-description"

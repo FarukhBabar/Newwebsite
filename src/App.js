@@ -450,6 +450,11 @@ import Tissuepaper from './Components/Main PAges/Partyware/Tissuepaper/Tissuepap
 import Tissuepapersingl from './Components/Main PAges/Partyware/Tissuepaper/Tissuepapersingl'
 import Weedingsingl from './Components/Main PAges/Partyware/Weeding/Weedingsingl'
 import Weding from './Components/Main PAges/Partyware/Weeding/Weeding'
+import Phone from './Components/Main PAges/Phoneaccessories/Phone'
+import Phonesingle from './Components/Main PAges/Phoneaccessories/Phonesingle'
+import Batteriesmain from './Components/Main PAges/Batteries/Batteriesmain'
+import Batteriessinge from './Components/Main PAges/Batteries/Batteriessinge'
+import Checkout from './Components/Checkout'
 const AdminLayout = ({ children }) => (
   
   <>
@@ -956,6 +961,14 @@ const App = () => {
      <Route path='/product/tissuepaper/:id' element={<MainLayout><Tissuepapersingl/></MainLayout>}/>
         <Route path='/category/partyware/weding' element={<MainLayout><Weding/></MainLayout>}/>
      <Route path='/product/weding/:id' element={<MainLayout><Weedingsingl/></MainLayout>}/>
+
+      <Route path='/category/phoneaccessories' element={<MainLayout><Phone/></MainLayout>}/>
+        <Route path='/product/phone/:id' element={<MainLayout><Phonesingle/></MainLayout>}/>
+
+      <Route path='/category/batteries' element={<MainLayout><Batteriesmain/></MainLayout>}/>
+      <Route path='/product/batteries/:id' element={<MainLayout><Batteriessinge/></MainLayout>}/>
+
+        <Route path='/checkout' element={<MainLayout><Checkout/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </div>
