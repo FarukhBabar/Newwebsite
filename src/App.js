@@ -455,6 +455,7 @@ import Phonesingle from './Components/Main PAges/Phoneaccessories/Phonesingle'
 import Batteriesmain from './Components/Main PAges/Batteries/Batteriesmain'
 import Batteriessinge from './Components/Main PAges/Batteries/Batteriessinge'
 import Checkout from './Components/Checkout'
+import SingleProductPage from './Components/Productdetails'
 const AdminLayout = ({ children }) => (
   
   <>
@@ -969,6 +970,7 @@ const App = () => {
       <Route path='/product/batteries/:id' element={<MainLayout><Batteriessinge/></MainLayout>}/>
 
         <Route path='/checkout' element={<MainLayout><Checkout/></MainLayout>}/>
+          <Route path="/product/:name" element={<MainLayout><SingleProductPage/></MainLayout>} />
       </Routes>
       </CartProvider>
     </div>

@@ -183,12 +183,12 @@ const Singlepage = ({ data }) => {
       <div className="singlepage-card">
         <div onClick={goBack} className="back-btn">Go to Product Page</div>
         <div className="product-content">
-          <div className="product-image">
+          <div className="product-imagesin">
             {product.image && (
               <img
                 src={`https://api.homeessentialshive.co.uk/${product.image.replace(/\\/g, '/')}`}
                 alt={product.name}
-                className='product-img'
+                className='product-imgsin'
               />
             )}
           </div>

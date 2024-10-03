@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { FaArrowUp } from 'react-icons/fa'; // Import Font Awesome for the arrow icon
 import Reviewsection from '../Components/Reviewsection';
 import Footer from './Footer';
-
+import MostSellingProductsCarousel from '../Components/MostSellingProductsCarousel';
+import axios from 'axios';
 const Home = () => {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
@@ -12,6 +13,20 @@ const Home = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+         const response = await axios.get("https://api.homeessentialshive.co.uk/api/products/most-selling");
+        setProducts(response.data);
+      } catch (error) {
+        console.error('Error fetching most selling products:', error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   useEffect(() => {
     // Event listener to show/hide scroll button
@@ -124,6 +139,8 @@ const Home = () => {
         </div>
       ))}
     </div>
+       <MostSellingProductsCarousel products={products} />
+
     <div className='row'>
         <Reviewsection/>
     </div>
